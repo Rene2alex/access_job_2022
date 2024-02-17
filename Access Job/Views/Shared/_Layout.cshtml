@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="~/Content/Imagenes/accessJob_logo.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css?1.0" media="all">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESS JOB</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Style.css")
+    @Scripts.Render("~/bundles/modernizr")
+
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style=" background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );">
+
+        <div class="navegador_largo">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="row" style="width: 400px; height: 100px;">
+                    <img src="~/Content/Imagenes/accessJob_imagoc.png" alt="logo" class="logo_accessJob_imagoc" />
+                    <img src="~/Content/Imagenes/accessJob_logoc.png" alt="logo" class="logo_accessJob_logo" />
+                </div>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right browser-layout_2">
+                    <li class="browser-layout"> <a href="#ACCESS-JOB">ACCESS JOB</a></li>
+                    <li class="browser-layout">  <a href="#NOSOTROS">NOSOTROS</a></li>
+                    <li class="browser-layout"> <a href="#SERVICIOS">SERVICIOS</a></li>
+                    <li class="browser-layout">  <a href="#contacto">contacto</a> </li>
+                    <li class="browser-layout">@Html.ActionLink("OFERTAS", "Index", "Home")</li>
+                    <li class="browser-layout">@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
+
+                </ul>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+  
+    <div>
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+

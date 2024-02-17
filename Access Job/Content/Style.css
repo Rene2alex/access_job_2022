@@ -1,0 +1,658 @@
+﻿
+.container {
+    width: 90%; /* Cambia el valor del ancho según tus necesidades */
+    margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+    /* También puedes ajustar el alto del contenedor si es necesario */
+    /* height: 1000px; */
+}
+/* Define un estilo para el elemento "footer" */
+
+/* Establece la posición relativa, lo que significa que se posicionará con respecto a su posición original en el flujo del documento */
+footer {
+    position: relative;
+    /* Establece la altura del footer en 3 píxeles */
+    height: 3px;
+    /* Establece el ancho del footer al 100% del ancho disponible */
+    width: 100%;
+    /* Centra el contenido dentro del footer horizontalmente */
+    text-align: center;
+    /* Establece un relleno de 10 píxeles arriba y abajo y 0 a la izquierda y a la derecha */
+    padding: 0px 0;
+}
+
+
+    footer .imagec {
+        background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+
+
+.fondoservi {
+
+    background-image: url('Imagenes/fondoservi.jpg');
+    background-size: cover;
+    color: #292c7e;
+
+}
+
+
+.fondoPlanesyServicios {
+    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+    background-size: cover;
+    color: #292c7e;
+}
+
+
+
+
+
+.fondo_T1 {
+    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+    font-size: 400%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+.fondo_sec {
+    background: #d8f0fc;
+    padding-top: 20px; /* Espacio adicional arriba */
+    padding-right: 20px; /* Espacio adicional a la derecha */
+    padding-bottom: 20px; /* Espacio adicional hacia abajo */
+    padding-left: 20px; /* Espacio adicional a la izquierda */
+    text-align: justify;
+}
+
+
+.fondo_s {
+    padding-right: 100px; /* Espacio adicional a la derecha */
+    padding-left: 100px; /* Espacio adicional a la izquierda */
+    padding-top: 0px; /* Espacio adicional arriba */
+    padding-bottom: 16px; /* Espacio adicional hacia abajo */
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .fondo_s {
+        padding-right: 10px; /* Espacio adicional a la derecha */
+        padding-left: 10px; /* Espacio adicional a la izquierda */
+    }
+}
+
+
+
+
+
+
+
+
+.logo_accessJob_imagoc {
+    height: 90px;
+    padding-top: 10px;
+    padding-left: 30px;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+   
+}
+
+.logo_accessJob_logo {
+    height: 70px;
+    padding-top: 14px;
+    padding-left: 0px;
+    pointer-events: none;
+    user-select: none;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+}
+
+#video-background {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    #video-background {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+
+
+.browser-layout {
+   
+    display: flex;
+    height: 40px;
+    margin-left: 10px; /* Espacio entre los elementos */
+    border-width: 0px; /* Cambia el ancho del borde */
+    border-radius: 18px 0px 0 0; /* Cambia el estilo del borde (en este caso, sólido) */
+    background-color: #7ecdf4; /* Color de fondo azul */
+
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente del texto */
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+ 
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* Esto deshabilitará la interacción y la selección en diferentes navegadores */
+    cursor: default;
+    /* Cambiar el cursor para que no parezca interactivo */
+    overflow: hidden; /* Evita que el contenido se desborde del contenedor */
+}
+
+.browser-layout_2 {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-right: 30px;
+    justify-content: center;
+}
+
+
+
+.imagenZ {
+    width: 40%;
+    height: 40%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+#NOSOTROS {
+    ; /* Ajusta el valor según sea necesario */
+}
+
+
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    padding: 13px;
+}
+
+.navegador_largo {
+    width: 100%; /* Cambia el valor del ancho según tus necesidades */
+    margin: auto; /* Esto centra el contenedor horizontalmente */
+    /* También puedes ajustar el alto del contenedor si es necesario */
+    /* height: 1000px; */
+}
+
+.navbar-inverse {
+    border-color: navajowhite ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* el color del fondo */
+#contacto {
+    color: white;
+    background-image: url('Imagenes/fondocomentario.png');
+    background-size: cover;
+}
+
+
+
+/* el color del fondo de comentarios*/
+.fondoc_contacto {
+    background-color: #ffffff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+
+}
+
+.contacto-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los contenedores se envuelvan en pantallas pequeñas */
+    justify-content: space-between;
+    align-items: center; /* Centro verticalmente */
+}
+
+.contenedor-izquierdo,
+.contenedor-derecho {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centro horizontalmente */
+    margin-bottom: 20px; /* Espaciado entre contenedores en pantallas pequeñas */
+}
+
+.formulario {
+    max-width: 500px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 0px; /* Puntas redondeadas */
+    padding: 20px;
+}
+
+    .formulario label {
+        
+        display: block;
+        margin-bottom: 5px;
+        color: black; /* Cambia el color de las letras a negro */
+    }
+
+    .formulario input,
+    .formulario textarea {
+
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: 1px solid #000; /* Borde negro */
+        border-radius: 5px; /* Puntas redondeadas para los campos */
+        color: black;
+    }
+
+    .formulario button {
+        background-color: rgba(188,150,91,1); /* Fondo negro */
+        color: white; /* Texto blanco */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px; /* Puntas redondeadas para el botón */
+        cursor: pointer;
+    }
+
+        .formulario button:hover {
+            background-color: #333; /* Cambia el color al hacer hover */
+        }
+
+
+.redes-y-ubicacion {
+   
+ 
+    border-radius: 50px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+}
+
+.redes-button {
+    border-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+.redes-logo {
+    width: 50px;
+}
+
+.vertical-line {
+    height: 30px;
+    width: 2px;
+    background-color: rgba(188, 150, 91, 1);
+    margin: 0 10px;
+}
+
+.redes-text {
+    color: rgba(188, 150, 91, 1);
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px; /* Ajusta la altura de línea según el tamaño de la imagen */
+}
+
+.ubicacion-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: auto;
+}
+
+.ubicacion-text {
+    color: rgba(188, 150, 91, 1);
+    font-weight: bold;
+    font-size: 16px;
+    width: auto;
+    height: auto;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .redes-y-ubicacion {
+        background-color: rgba(188, 150, 91, 1);
+        border-radius: 50px;
+        width: 80%; /* Modificado para que se adapte al ancho de la pantalla */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        text-align: center;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    }
+
+
+    .ubicacion-button {
+        width: 100%; /* Modificado para que se adapte al ancho de la pantalla */
+        margin: 0 auto; /* Centra el botón horizontalmente */
+        margin-bottom: 10px; /* Agrega margen inferior para separar los botones */
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .redes-button {
+        width: 100%; /* Modificado para que se adapte al ancho de la pantalla */
+        margin: 0 auto; /* Centra el botón horizontalmente */
+        margin-bottom: 10px; /* Agrega margen inferior para separar los botones */
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .redes-logo {
+        width: 40px; /* Modificado para adaptarse mejor al espacio */
+    }
+
+    .vertical-line {
+        display: none; /* Oculta la línea vertical en pantallas pequeñas */
+    }
+
+    .redes-text {
+        font-size: 14px; /* Ajusta el tamaño del texto para una mejor legibilidad */
+        line-height: 20px; /* Ajusta la altura de línea del texto */
+    }
+
+
+    .ubicacion-text {
+        font-size: 12px; /* Ajusta el tamaño del texto para una mejor legibilidad */
+        line-height: 20px; /* Ajusta la altura de línea del texto */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.planes {
+   
+    padding: 212px;
+    text-align: center;
+    margin-top: -10px;
+    width: 1097px
+}
+
+.texto {
+    background-image: linear-gradient(to right, #7ccff0,#76bae9,#6fa7d8,#6390c9,#5a74b8,#4c55a2);
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: -20px;
+    width: 1097px
+}
+
+.cuadro {
+    width: 100px; /* Ancho de cada cuadro */
+    height: 100px; /* Altura de cada cuadro */
+    margin-right: 10px; /* Margen entre cada cuadro */
+    float: left; /* Alineación horizontal */
+    transition: margin-right 0.5s /* Transición suave del margen */
+}
+
+.rojo {
+    background-color: #b0dcf4; /* Color rojo */
+    height: 354px;
+    width: 221px;
+    margin-top: -163px;
+    border-radius: 50px 0 0 0; /* Redondea solo la esquina inferior izquierda */
+   /* Permite que los cuadros floten a la izquierda */
+    margin-left: -122px; /* Mover el cuadro 50px hacia la izquierda */
+    left: 20px
+}
+
+.verde {
+    background-color: #9cb4dc; /* Color verde */
+    height: 354px;
+    width: 221px;
+    margin-top: -163px;
+    border-radius: 50px 0 0 0;
+    /* Permite que los cuadros floten a la izquierda */
+    margin-left: -122px; /* Mover el cuadro 50px hacia la izquierda */
+    left: 20px
+}
+
+.azul {
+    background-color: #959dcb; /* Color azul */
+    height: 354px;
+    width: 221px;
+    margin-top: -163px;
+    margin-right: 50px;
+    border-radius: 50px 0 0 0;
+    /* Permite que los cuadros floten a la izquierda */
+    right: 10px
+}
+
+.boton {
+    background-color: #7cccf4;
+    border-radius: 10px; /* Redondear esquinas */
+    width: 100px;
+    height: 43px
+}
+
+.gratis {
+    text-align: center;
+    padding: 5px; /* Ajusta el relleno según sea necesario */
+    outline: 1px solid #0e8eb5; /* Define un contorno sólido de 2 píxeles de grosor y color negro */
+    display: inline-block; /* Para que el contorno se ajuste alrededor del elemento */
+    width: 176px;
+    border-radius: 10px; /* Redondear esquinas */
+}
+
+.modulo {
+    color: #0e8eb5;
+}
+
+.mensual {
+    text-align: center;
+    padding: 5px; /* Ajusta el relleno según sea necesario */
+    outline: 1px solid #0e8eb5; /* Define un contorno sólido de 2 píxeles de grosor y color negro */
+    display: inline-block; /* Para que el contorno se ajuste alrededor del elemento */
+    width: 176px;
+    border-radius: 10px; /* Redondear esquinas */
+}
+
+.mente {
+    color: #0e8eb5;
+}
+
+.anual {
+    text-align: center;
+    padding: 5px; /* Ajusta el relleno según sea necesario */
+    outline: 1px solid #0e8eb5; /* Define un contorno sólido de 2 píxeles de grosor y color negro */
+    display: inline-block; /* Para que el contorno se ajuste alrededor del elemento */
+    width: 176px;
+    border-radius: 10px; /* Redondear esquinas */
+}
+
+.anu {
+    background-color: #7cccf4;
+    border-radius: 10px; /* Redondear esquinas */
+    width: 100px;
+    height: 43px
+}
+
+.sual {
+    color: #0e8eb5;
+}
+
+.negritas {
+    font-weight: bold;
+}
+
+.negro {
+    font-weight: bold;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
