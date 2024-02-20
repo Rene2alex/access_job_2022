@@ -5,9 +5,11 @@
     /* También puedes ajustar el alto del contenedor si es necesario */
     /* height: 1000px; */
 }
-/* Define un estilo para el elemento "footer" */
+
 
 /* Establece la posición relativa, lo que significa que se posicionará con respecto a su posición original en el flujo del documento */
+/* la base  de la pagina*/
+
 footer {
     position: relative;
     /* Establece la altura del footer en 3 píxeles */
@@ -19,8 +21,6 @@ footer {
     /* Establece un relleno de 10 píxeles arriba y abajo y 0 a la izquierda y a la derecha */
     padding: 0px 0;
 }
-
-
     footer .imagec {
         background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
         pointer-events: none;
@@ -29,67 +29,120 @@ footer {
         -moz-user-select: none;
         -ms-user-select: none;
     }
+/* la base  de la pagina*/
 
 
 
-.fondoservi {
 
-    background-image: url('Imagenes/fondoservi.jpg');
-    background-size: cover;
-    color: #292c7e;
 
+
+
+/* nostros apartado */
+
+.imagen_imagen1 {
+    max-width: 25%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .imagen_imagen1 {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
-.fondoPlanesyServicios {
-    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
-    background-size: cover;
-    color: #292c7e;
+.imagen_accessJob_logo {
+    max-width: 15%;
+    height: auto;
+    padding-top: 80px; /* Espacio adicional arriba */
+}
+
+@media (max-width: 768px) {
+    .imagen_accessJob_logo {
+        max-width: 100%;
+        height: auto;
+        padding-top: 0px; /* Espacio adicional arriba */
+    }
 }
 
 
+.textoper {
+    padding-top: 100px; /* Espacio adicional arriba */
+    color: #83d0f6;
+    font-size: 25px;
+}
+
+@media (max-width: 768px) {
+    .textoper {
+        padding-top: 0px;
+        color: #83d0f6;
+        font-size: 15px;
+    }
+}
+
+/* nostros apartado */
 
 
 
-.fondo_T1 {
-    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
-    font-size: 400%;
-    color: #FFFFFF;
-    text-align: center;
+
+
+
+/* nostros apartado2 */
+
+.imagen_imagen2 {
+    max-width: 58%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .imagen_imagen2 {
+        max-width: 49%;
+        height: auto;
+    }
 }
 
 
-.fondo_sec {
-    background: #d8f0fc;
-    padding-top: 20px; /* Espacio adicional arriba */
-    padding-right: 20px; /* Espacio adicional a la derecha */
-    padding-bottom: 20px; /* Espacio adicional hacia abajo */
-    padding-left: 20px; /* Espacio adicional a la izquierda */
-    text-align: justify;
+.imagen_accessJob_logo2 {
+    max-width: 38%;
+    height: auto;
+    padding-left: 25px; /* Espacio adicional a la izquierda */
+    padding-top: 10px; /* Espacio adicional arriba */
 }
 
-
-.fondo_s {
-    padding-right: 100px; /* Espacio adicional a la derecha */
-    padding-left: 100px; /* Espacio adicional a la izquierda */
-    padding-top: 0px; /* Espacio adicional arriba */
-    padding-bottom: 16px; /* Espacio adicional hacia abajo */
-}
-
-/* Media query para pantallas más pequeñas */
-@media screen and (max-width: 768px) {
-    .fondo_s {
-        padding-right: 10px; /* Espacio adicional a la derecha */
-        padding-left: 10px; /* Espacio adicional a la izquierda */
+@media (max-width: 768px) {
+    .imagen_accessJob_logo2 {
+        max-width: 49%;
+        height: auto;
+        padding-top: 0px; /* Espacio adicional arriba */
     }
 }
 
 
 
+.textoper2 {
+    padding-top: 0px;
+    color: #83d0f6;
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    .textoper2 {
+        padding-top: 100px; /* Espacio adicional arriba */
+        color: #83d0f6;
+        font-size: 25px;
+    }
+}
+
+/* nostros apartado2 */
 
 
 
 
+
+
+
+/*navegaccion*/
 
 .logo_accessJob_imagoc {
     height: 90px;
@@ -100,7 +153,6 @@ footer {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-   
 }
 
 .logo_accessJob_logo {
@@ -114,11 +166,9 @@ footer {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-
 }
 
 #video-background {
-
     top: 0;
     left: 0;
     width: 100%;
@@ -137,7 +187,6 @@ footer {
 
 
 .browser-layout {
-   
     display: flex;
     height: 40px;
     margin-left: 10px; /* Espacio entre los elementos */
@@ -149,7 +198,29 @@ footer {
     color: white; /* Color del texto */
     font-size: 18px; /* Tamaño de fuente del texto */
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
- 
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* Esto deshabilitará la interacción y la selección en diferentes navegadores */
+    cursor: default;
+    /* Cambiar el cursor para que no parezca interactivo */
+    overflow: hidden; /* Evita que el contenido se desborde del contenedor */
+    
+}
+
+.blazul {
+    background-color: #292c7e; /* Color de fondo azul */
+    display: flex;
+    height: 4px;
+    margin-left: 10px; /* Espacio entre los elementos */
+    border-width: 0px; /* Cambia el ancho del borde */
+    border-radius: 5px 5px 5px 5px; /* Cambia el estilo del borde (en este caso, sólido) */
+    text-align: center; /* Centra el texto horizontalmente */
+    color: white; /* Color del texto */
+    font-size: 25px; /* Tamaño de fuente del texto */
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
@@ -169,6 +240,27 @@ footer {
 }
 
 
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    padding: 23px;
+    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+}
+
+.navegador_largo {
+    width: 100%; /* Cambia el valor del ancho según tus necesidades */
+    margin: auto; /* Esto centra el contenedor horizontalmente */
+    /* También puedes ajustar el alto del contenedor si es necesario */
+    /* height: 1000px; */
+}
+
+.navbar-inverse {
+    border-color: navajowhite;
+}
+
 
 .imagenZ {
     width: 40%;
@@ -180,77 +272,58 @@ img {
     height: auto;
 }
 
+/*navegaccion*/
 
 
-#NOSOTROS {
-    ; /* Ajusta el valor según sea necesario */
+
+
+/*Planes y Servicios*/
+
+.fondoservi {
+    background-image: url('Imagenes/fondoservi.jpg');
+    background-size: cover;
+    color: #292c7e;
 }
 
-
-
-.navbar-inverse .navbar-nav > li > a {
-    color: white;
+.fondoPlanesyServicios {
+    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+    background-size: cover;
+    color: #292c7e;
 }
 
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    padding: 13px;
+.fondo_T1 {
+    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+    font-size: 100%;
+    font-size: 50px; /* Tamaño de fuente del texto */
+    color: #FFFFFF;
+    text-align: center;
 }
 
-.navegador_largo {
-    width: 100%; /* Cambia el valor del ancho según tus necesidades */
-    margin: auto; /* Esto centra el contenedor horizontalmente */
-    /* También puedes ajustar el alto del contenedor si es necesario */
-    /* height: 1000px; */
+.fondo_sec {
+    background: #d8f0fc;
+    padding-top: 20px; /* Espacio adicional arriba */
+    padding-right: 20px; /* Espacio adicional a la derecha */
+    padding-bottom: 20px; /* Espacio adicional hacia abajo */
+    padding-left: 20px; /* Espacio adicional a la izquierda */
+    text-align: justify;
 }
 
-.navbar-inverse {
-    border-color: navajowhite ;
+.fondo_s {
+    padding-right: 100px; /* Espacio adicional a la derecha */
+    padding-left: 100px; /* Espacio adicional a la izquierda */
+    padding-top: 0px; /* Espacio adicional arriba */
+    padding-bottom: 16px; /* Espacio adicional hacia abajo */
 }
 
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 767px) {
+    .fondo_s {
+        padding-right: 10px; /* Espacio adicional a la derecha */
+        padding-left: 10px; /* Espacio adicional a la izquierda */
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Planes y Servicios*/
 
 
 
@@ -321,6 +394,7 @@ img {
     background-color: white;
     border-radius: 0px; /* Puntas redondeadas */
     padding: 20px;
+    text-align: center;
 }
 
     .formulario label {
@@ -332,18 +406,17 @@ img {
 
     .formulario input,
     .formulario textarea {
-
         width: 100%;
         padding: 10px;
         margin-bottom: 15px;
         box-sizing: border-box;
-        border: 1px solid #000; /* Borde negro */
+        border: 3px solid #b0dcf4; /* Borde negro */
         border-radius: 5px; /* Puntas redondeadas para los campos */
-        color: black;
+        color: #b0dcf4;
     }
 
     .formulario button {
-        background-color: rgba(188,150,91,1); /* Fondo negro */
+        background-color: #7ecdf4; /* Fondo negro */
         color: white; /* Texto blanco */
         padding: 10px 20px;
         border: none;
@@ -357,24 +430,23 @@ img {
 
 
 .redes-y-ubicacion {
-   
- 
-    border-radius: 50px;
+    border-radius: 10px;
     width: 400px;
     text-align: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
+    color: #212d6f;
 }
 
 .redes-button {
-    border-color: blue;
+    border-color: #b0dcf4;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 200px;
+    width: 237px;
 }
 
 .redes-logo {
@@ -384,13 +456,12 @@ img {
 .vertical-line {
     height: 30px;
     width: 2px;
-    background-color: rgba(188, 150, 91, 1);
+    background-color: #80ccf4;
     margin: 0 10px;
 }
 
 .redes-text {
-    color: rgba(188, 150, 91, 1);
-
+    color: #80ccf4;
     font-weight: bold;
     font-size: 16px;
     line-height: 50px; /* Ajusta la altura de línea según el tamaño de la imagen */
@@ -408,7 +479,7 @@ img {
 }
 
 .ubicacion-text {
-    color: rgba(188, 150, 91, 1);
+    color: black;
     font-weight: bold;
     font-size: 16px;
     width: auto;
@@ -418,7 +489,7 @@ img {
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .redes-y-ubicacion {
-        background-color: rgba(188, 150, 91, 1);
+        
         border-radius: 50px;
         width: 80%; /* Modificado para que se adapte al ancho de la pantalla */
         margin: 0 auto; /* Centra el contenedor horizontalmente */
@@ -476,6 +547,20 @@ img {
 }
 
 
+.mensaje {
+    text-align: center;
+    color:  blue;
+    font-weight: bold;
+    top: -10px;
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco con 30% de opacidad */
+    width: 277px;
+    height: 331px;
+    padding: 20px;
+    color: black;
+}
 
 
 
@@ -506,134 +591,126 @@ img {
 
 
 
+/* Estilos para la sección de Planes y Servicios */
 
-
-
-
+/* Estilo general para la sección de Planes y Servicios */
 .planes {
-   
-    padding: 212px;
-    text-align: center;
-    margin-top: -10px;
-    width: 1097px
+    padding: 0; /* Elimina el relleno interior */
+    text-align: center; /* Alinea el contenido al centro */
+    margin-top: -10px; /* Mueve la sección hacia arriba */
 }
-
+.contornoser {
+    padding-top: 10px; /* Espacio adicional arriba */
+    padding-right: 10px; /* Espacio adicional a la derecha */
+    padding-bottom: 10px; /* Espacio adicional hacia abajo */
+    padding-left: 10px; /* Espacio adicional a la izquierda */
+}
+/* Estilo para el texto dentro de la sección */
 .texto {
-    background-image: linear-gradient(to right, #7ccff0,#76bae9,#6fa7d8,#6390c9,#5a74b8,#4c55a2);
-    font-family: Arial, sans-serif;
-    color: #FFFFFF;
-    text-align: center;
-    margin-top: -20px;
-    width: 1097px
+    background-image: linear-gradient(to right, #7ccff0, #76bae9, #6fa7d8, #6390c9, #5a74b8, #4c55a2); /* Gradiente de fondo */
+    font-family: Arial, sans-serif; /* Familia de fuente */
+    color: #FFFFFF; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    margin-top: -20px; /* Mueve el texto hacia arriba */
+    
 }
 
-.cuadro {
-    width: 100px; /* Ancho de cada cuadro */
-    height: 100px; /* Altura de cada cuadro */
-    margin-right: 10px; /* Margen entre cada cuadro */
-    float: left; /* Alineación horizontal */
-    transition: margin-right 0.5s /* Transición suave del margen */
+
+
+/* Estilo para los cuadros de colores */
+
+
+/* Estilos específicos para cada color de cuadro */
+.contenedorservi {
+    border-radius: 50px 0 0 0; /* Redondea solo la esquina inferior derecha */
+    padding-top: 20px; /* Espacio adicional arriba */
+    padding-right: 0px; /* Espacio adicional a la derecha */
+    padding-bottom: 20px; /* Espacio adicional hacia abajo */
+    padding-left: 0px; /* Espacio adicional a la izquierda */
+    color: black;
+    width: 100%; /* Ahora el ancho del cuadro se ajustará automáticamente */
+    margin-bottom: 20px; /* Espacio entre cuadros */
+    transition: margin-right 0.5s; /* Transición suave del margen derecho */
+    font-size: 20px;
 }
 
 .rojo {
-    background-color: #b0dcf4; /* Color rojo */
-    height: 354px;
-    width: 221px;
-    margin-top: -163px;
-    border-radius: 50px 0 0 0; /* Redondea solo la esquina inferior izquierda */
-   /* Permite que los cuadros floten a la izquierda */
-    margin-left: -122px; /* Mover el cuadro 50px hacia la izquierda */
-    left: 20px
+    background-color: #aaceec; /* Color de fondo rojo */
 }
 
 .verde {
     background-color: #9cb4dc; /* Color verde */
-    height: 354px;
-    width: 221px;
-    margin-top: -163px;
-    border-radius: 50px 0 0 0;
-    /* Permite que los cuadros floten a la izquierda */
-    margin-left: -122px; /* Mover el cuadro 50px hacia la izquierda */
-    left: 20px
+   
 }
 
 .azul {
-    background-color: #959dcb; /* Color azul */
-    height: 354px;
-    width: 221px;
-    margin-top: -163px;
-    margin-right: 50px;
-    border-radius: 50px 0 0 0;
-    /* Permite que los cuadros floten a la izquierda */
-    right: 10px
-}
-
-.boton {
-    background-color: #7cccf4;
-    border-radius: 10px; /* Redondear esquinas */
-    width: 100px;
-    height: 43px
-}
-
-.gratis {
-    text-align: center;
-    padding: 5px; /* Ajusta el relleno según sea necesario */
-    outline: 1px solid #0e8eb5; /* Define un contorno sólido de 2 píxeles de grosor y color negro */
-    display: inline-block; /* Para que el contorno se ajuste alrededor del elemento */
-    width: 176px;
-    border-radius: 10px; /* Redondear esquinas */
+    background-color: #959dcb; /* Color azul */ 
+   
 }
 
 .modulo {
-    color: #0e8eb5;
-}
-
-.mensual {
-    text-align: center;
-    padding: 5px; /* Ajusta el relleno según sea necesario */
-    outline: 1px solid #0e8eb5; /* Define un contorno sólido de 2 píxeles de grosor y color negro */
-    display: inline-block; /* Para que el contorno se ajuste alrededor del elemento */
-    width: 176px;
-    border-radius: 10px; /* Redondear esquinas */
-}
-
-.mente {
-    color: #0e8eb5;
-}
-
-.anual {
-    text-align: center;
-    padding: 5px; /* Ajusta el relleno según sea necesario */
-    outline: 1px solid #0e8eb5; /* Define un contorno sólido de 2 píxeles de grosor y color negro */
-    display: inline-block; /* Para que el contorno se ajuste alrededor del elemento */
-    width: 176px;
-    border-radius: 10px; /* Redondear esquinas */
-}
-
-.anu {
-    background-color: #7cccf4;
-    border-radius: 10px; /* Redondear esquinas */
-    width: 100px;
-    height: 43px
-}
-
-.sual {
-    color: #0e8eb5;
-}
-
-.negritas {
-    font-weight: bold;
-}
-
-.negro {
-    font-weight: bold;
-}
-
-.negrita {
-    font-weight: bold;
+    color: #048cb2;
+    font-size: 25px;
+    padding-top: 25px; /* Espacio adicional arriba */
+    padding-bottom: 25px; /* Espacio adicional hacia abajo */
 }
 
 
+.botoncon {
+    display: flex;
+    justify-content: center;
+}
+
+
+.botonser {
+    justify-content: center;
+    background-color: #7cccf4; /* Color de fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 100px; /* Ancho del botón */
+    height: 43px; /* Altura del botón */
+
+    color: black;
+}
+
+.gratis {
+    text-align: center; /* Alineación del texto al centro */
+    padding: 5px; /* Ajuste del relleno */
+    outline: 1px solid #0e8eb5; /* Contorno sólido */
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 250px; /* Ancho del elemento */
+    border-radius: 10px; /* Bordes redondeados */
+    font-size: 30px;
+    
+}
+
+@media screen and (max-width: 767px) {
+    .gratis {
+        text-align: center; /* Alineación del texto al centro */
+        padding: 5px; /* Ajuste del relleno */
+        outline: 1px solid #0e8eb5; /* Contorno sólido */
+        display: inline-block; /* Mostrar como bloque en línea */
+        width: 150px; /* Ancho del elemento */
+        border-radius: 10px; /* Bordes redondeados */
+        font-size: 20px;
+    }
+    .contenedorservi {
+        border-radius: 50px 0 0 0; /* Redondea solo la esquina inferior derecha */
+        padding-top: 20px; /* Espacio adicional arriba */
+        padding-right: 0px; /* Espacio adicional a la derecha */
+        padding-bottom: 20px; /* Espacio adicional hacia abajo */
+        padding-left: 0px; /* Espacio adicional a la izquierda */
+        color: black;
+        width: 100%; /* Ahora el ancho del cuadro se ajustará automáticamente */
+        margin-bottom: 20px; /* Espacio entre cuadros */
+        transition: margin-right 0.5s; /* Transición suave del margen derecho */
+        font-size: 15px;
+    }
+
+}
+
+
+
+/* Estilos para la sección de Planes y Servicios */
 
 
 

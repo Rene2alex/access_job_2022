@@ -2,63 +2,57 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="ACCESS-JOB" style="padding: 36px;">
+<div id="ACCESS-JOB" style="padding: 46px;">
+</div>
+<div>
+    <section id="video">
+        <div>
+            <video autoplay muted loop id="video-background">
+                <source src="~/Content/Videos/video1.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </section>
 </div>
 
 <div class="container body-content">
 
-    <div>
-        <section id="video">
-            <div>
-                <video autoplay muted loop id="video-background">
-                    <source src="~/Content/Videos/video1.mp4" type="video/mp4">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-            </div>
-        </section>
 
-        <div id="NOSOTROS" class="row">
-            <div class="col-md-3 ">
-                <img src="~/Content/Imagenes/imagen1.jpg" />
-            </div>
-            <div class="col-md-4">
-                <h2>Get more libraries</h2>
-                <p>
-                    Permite fichar al entrar y salir de la organización.
-                    Es el más antiguo, sin embargo muchas empresas lo utilizan con un lector
-                    de tarjetas para tener un mejor control de la asistencia.
-                </p>
-            </div>
+
+
+    <div  id="NOSOTROS"  class="row">
+        <div class="col-sm-4 imagen_imagen1">
+            <img src="~/Content/Imagenes/imagen1.jpg">
         </div>
-
+        <div class="col-sm-3 imagen_accessJob_logo">
+            <img src="~/Content/Imagenes/accessJob_logo.png">
+        </div>
+        <div class="col-sm-7 textoper">
+            <p>
+                Permite fichar al entrar y salir de la organización.
+                Es el más antiguo, sin embargo muchas empresas lo utilizan con un lector
+                de tarjetas para tener un mejor control de la asistencia
+            </p>
+        </div>
     </div>
 
 
 
     <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
+        <div class="col-sm-5 ">
+            <img src="~/Content/Imagenes/imagen1.jpg" class="imagen_imagen2">
 
+
+            <img src="~/Content/Imagenes/accessJob_logo.png" class="imagen_accessJob_logo2">
         </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="col-sm-7 ">
+            <p class="textoper2">
+                Permite fichar al entrar y salir de la organización.
+                Es el más antiguo, sin embargo muchas empresas lo utilizan con un lector
+                de tarjetas para tener un mejor control de la asistencia
+            </p>
         </div>
     </div>
-
-
-
 
 
     <div id="SERVICIOS" class="fondoservi">
@@ -142,94 +136,106 @@
 
 
 
-    <div class="fondoPlanesyServicios" >
+    <div class="fondoPlanesyServicios">
         <div class="fondo_T1">
             Planes y Servicios
         </div>
 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4 ">
+                    <div class="contenedorservi rojo">
+                        <div class="text-center">
+                            <h4 class="gratis">Gratis</h4>
+                            <p class="">3 meses por lanzamiento</p>
+                            <h5 class="modulo">Módulo</h5>
+                            <p>
+                                Ingresos y egresos<br />
+                                Reportes<br />
+                                Pre-corte<br />
+                                Conciliación bancaria<br />
+                                Contabilidad básica<br />
+                                APP móvil
+                            </p>
+                            <div class="text-center botoncon">
+                                <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
+                            </div>
 
-        <div class="planes">
-            <div class="cuadro rojo">
-                <br />
-                <p class="gratis">Gratis</p>
-                <p class="negritas">3 meses por lanzamiento</p><br />
-                <h4 class="modulo">Mòdulo </h4><br />
-                <p>
-                    Ingresos y egresos<br />
+                            <div id="ACCESS-JOB" style="padding: 10px;">
+                            </div>
+                        </div>
+                    </div>
 
-                    Reportes<br />
 
-                    Pre-corte<br />
 
-                    Conciliación bancaria<br />
+                </div>
 
-                    Contabilidad básica<br />
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contenedorservi verde">
+                        <div class="text-center">
+                            <h4 class="gratis">Mensualmente</h4>
+                            <p class="">$399.00</p>
+                            <h5 class="modulo">Módulo</h5>
+                            <p>
+                                Ingresos y egresos<br />
+                                Reportes<br />
+                                Pre-corte<br />
+                                Conciliación bancaria<br />
+                                Contabilidad básica<br />
+                                APP móvil
+                            </p>
+                            <div class="text-center botoncon">
+                                <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
+                            </div>
 
-                    APP móvil
-                </p>
-                <button class="boton">Subscribirse</button>
+                            <div id="ACCESS-JOB" style="padding: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="contenedorservi azul">
+                        <div class="text-center">
+                            <h4 class="gratis">Anualmente</h4>
+                            <p class="">$3999.00</p>
+                            <h5 class="modulo">Módulo</h5>
+                            <p>
+                                Ingresos y egresos<br />
+                                Reportes<br />
+                                Pre-corte<br />
+                                Conciliación bancaria<br />
+                                Contabilidad básica<br />
+                                APP móvil
+                            </p>
+                            <div class="text-center botoncon">
+                                <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
+                            </div>
+
+                            <div id="ACCESS-JOB" style="padding: 10px;">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="cuadro verde">
-                <br />
-                <p class="mensual">Mensualmente</p>
-                <p class="negro">$399.°°</p><br />
-                <h4 class="sual">Mòdulo</h4><br />
-                <p>
-                    Ingresos y egresos<br />
-
-                    Reportes<br />
-
-                    Pre-corte<br />
-
-                    Conciliación bancaria<br />
-
-                    Contabilidad básica<br />
-
-                    APP móvil
-                </p>
-                <button class="boton">Subscribirse</button>
-            </div>
-            <div class="cuadro azul">
-                <br />
-                <p class="anual">Anualmente</p>
-                <p class="negrita">$3999.°°</p><br />
-                <h4 class="mente">Mòdulo</h4><br />
-                <p>
-                    Ingresos y egresos<br />
-
-                    Reportes<br />
-
-                    Pre-corte<br />
-
-                    Conciliación bancaria<br />
-
-                    Contabilidad básica<br />
-
-                    APP móvil
-                </p>
-                <button class="anu">Subscribirse</button>
-            </div>
-
         </div>
-
     </div>
 
 
-
     <section id="contacto">
-
-        <h2 class="Titlecontacto">Contacto</h2>
         <div class="contacto-content">
             <div class="contenedor-izquierdo fondoc_contacto">
                 <div class="formulario">
+                    <h2 class="mensaje">Mensaje</h2>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
 
                     <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo">
+                    <input type="email" placeholder="Correo" id="correo" name="correo">
 
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono">
+                    <input type="tel" placeholder="Mensaje" id="telefono" name="telefono">
 
                     <div class="form-floating" style="border-color: blue;">
                         <textarea class="form-control" placeholder="Mensaje" id="Mensaje" style="height: 100px"></textarea>
@@ -242,19 +248,21 @@
             </div>
 
             <div class="contenedor-derecho">
+                <br>
                 <div class="redes-y-ubicacion">
+
                     <h2>Redes Sociales</h2>
                 </div>
                 <br>
-                <div>
-                    <button class="redes-button" onclick="window.open('https://www.facebook.com/daniel.ramosespino/', '_blank')">
+                <div class="contenedor">
+                    <button class="redes-button" onclick="window.open('https://web.whatsapp.com/', '_blank')">
                         <img src="~/Content/Imagenes/facebook.png" alt="Facebook Logo" class="redes-logo">
 
                         <div class="vertical-line"></div>
                         <span class="redes-text">Facebook</span>
                     </button>
                     <br>
-                    <button class="redes-button" onclick="window.open('https://www.instagram.com/danielramosespino/', '_blank')">
+                    <button class="redes-button" onclick="window.open('https://web.whatsapp.com/', '_blank')">
                         <img src="~/Content/Imagenes/Instagram.png" alt="Instagram Logo" class="redes-logo">
 
                         <div class="vertical-line"></div>
@@ -262,7 +270,7 @@
                     </button>
                     <br>
 
-                    <button class="redes-button" onclick="window.open('https://www.youtube.com/channel/UCvQwfdlOR55OO82gFWJCnWQ', '_blank')">
+                    <button class="redes-button" onclick="window.open('https://web.whatsapp.com/', '_blank')">
                         <img src="~/Content/Imagenes/whatsapp.png" alt="Youtube Logo" class="redes-logo">
 
                         <div class="vertical-line"></div>
@@ -270,26 +278,30 @@
                     </button>
                 </div>
                 <br>
+                <br />
                 <div class="redes-y-ubicacion">
                     <h2>Ubicacion</h2>
                 </div>
                 <br>
                 <div>
                     <button class="ubicacion-button" onclick="window.open('https://www.google.com/maps/place/Plaza+Perisur+Pachuca,+Av+Pirules,+Venta+Prieta,+42083+Pachuca+de+Soto,+Hgo.', '_blank')">
-                        <span class="ubicacion-text">https://www.google.com/maps/place/Tizayuca,+Hgo.</span>
+                        <span class="ubicacion-text">https://urldra.cloud.huawei.com/oTEgLXeUQE</span>
                     </button>
                 </div>
             </div>
-
+            <br>
         </div>
     </section>
+
 </div>
 
 
 
 
+
+
 <footer>
-   
+
     <div class="imagec">
         <br />
         <img src="~/Content/Imagenes/accessJob_logo.png" alt="Logo" width="150" height="150">
