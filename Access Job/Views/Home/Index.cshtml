@@ -2,8 +2,11 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="ACCESS-JOB" style="padding: 46px;">
+
+
+<div class="esoacio1" id="ACCESS-JOB">
 </div>
+
 <div>
     <section id="video">
         <div>
@@ -17,42 +20,25 @@
 
 <div class="container body-content">
 
+    <section id="NOSOTROS">
+        <div class="row">
+            <div class="col-sm-5 ">
+                <img src="~/Content/Imagenes/imagen1.jpg" class="imagen_imagen2">
 
 
-
-    <div  id="NOSOTROS"  class="row">
-        <div class="col-sm-4 imagen_imagen1">
-            <img src="~/Content/Imagenes/imagen1.jpg">
+                <img src="~/Content/Imagenes/accessJob_logo.png" class="imagen_accessJob_logo2">
+            </div>
+            <div class="col-sm-7 ">
+                <p class="textoper2">
+                    Permite fichar al entrar y salir de la organización.
+                    Es el más antiguo, sin embargo muchas empresas lo utilizan con un lector
+                    de tarjetas para tener un mejor control de la asistencia
+                </p>
+            </div>
         </div>
-        <div class="col-sm-3 imagen_accessJob_logo">
-            <img src="~/Content/Imagenes/accessJob_logo.png">
-        </div>
-        <div class="col-sm-7 textoper">
-            <p>
-                Permite fichar al entrar y salir de la organización.
-                Es el más antiguo, sin embargo muchas empresas lo utilizan con un lector
-                de tarjetas para tener un mejor control de la asistencia
-            </p>
-        </div>
-    </div>
+    </section>
 
 
-
-    <div class="row">
-        <div class="col-sm-5 ">
-            <img src="~/Content/Imagenes/imagen1.jpg" class="imagen_imagen2">
-
-
-            <img src="~/Content/Imagenes/accessJob_logo.png" class="imagen_accessJob_logo2">
-        </div>
-        <div class="col-sm-7 ">
-            <p class="textoper2">
-                Permite fichar al entrar y salir de la organización.
-                Es el más antiguo, sin embargo muchas empresas lo utilizan con un lector
-                de tarjetas para tener un mejor control de la asistencia
-            </p>
-        </div>
-    </div>
 
 
     <div id="SERVICIOS" class="fondoservi">
@@ -161,7 +147,7 @@
                                 <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
                             </div>
 
-                            <div id="ACCESS-JOB" style="padding: 10px;">
+                            <div style="padding: 10px;">
                             </div>
                         </div>
                     </div>
@@ -187,9 +173,9 @@
                             <div class="text-center botoncon">
                                 <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
                             </div>
-
-                            <div id="ACCESS-JOB" style="padding: 10px;">
+                            <div style="padding: 10px;">
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -212,7 +198,7 @@
                                 <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
                             </div>
 
-                            <div id="ACCESS-JOB" style="padding: 10px;">
+                            <div style="padding: 10px;">
                             </div>
                         </div>
 
@@ -223,22 +209,25 @@
     </div>
 
 
-    <section id="contacto">
-        <div class="contacto-content">
+
+
+    <section id="contacto" >
+        <div class="contacto-content" >
             <div class="contenedor-izquierdo fondoc_contacto">
-                <div class="formulario">
+                <div class="formulario ">
                     <h2 class="mensaje">Mensaje</h2>
                     <label for="nombre">Nombre:</label>
-                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" >
 
                     <label for="correo">Correo:</label>
                     <input type="email" placeholder="Correo" id="correo" name="correo">
 
                     <label for="telefono">Teléfono:</label>
-                    <input type="tel" placeholder="Mensaje" id="telefono" name="telefono">
+                    <input type="tel" placeholder="Teléfono" id="Teléfono" name="Teléfono">
 
-                    <div class="form-floating" style="border-color: blue;">
-                        <textarea class="form-control" placeholder="Mensaje" id="Mensaje" style="height: 100px"></textarea>
+                    <div class="form-floating">
+                        <label for="Mensaje">Mensaje:</label>
+                        <textarea class="form-control" placeholder="Mensaje" id="Mensaje" style="height: 100px;"></textarea>
                     </div>
 
                     <button style="justify-content:center" type="button">Enviar</button>
@@ -294,9 +283,6 @@
     </section>
 
 </div>
-
-
-
 
 
 
