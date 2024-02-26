@@ -67,6 +67,7 @@ footer {
     max-width: 15%;
     height: auto;
     padding-top: 80px; /* Espacio adicional arriba */
+
 }
 
 @media (max-width: 768px) {
@@ -119,6 +120,11 @@ footer {
     height: auto;
     padding-left: 25px; /* Espacio adicional a la izquierda */
     padding-top: 10px; /* Espacio adicional arriba */
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 @media (max-width: 768px) {
@@ -314,6 +320,18 @@ img {
     text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+    .fondo_T1 {
+        background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+        font-size: 100%;
+        font-size: 33px; /* Tamaño de fuente del texto */
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+
+
+
 .fondo_sec {
     background: #d8f0fc;
     padding-top: 20px; /* Espacio adicional arriba */
@@ -374,7 +392,7 @@ img {
 
 
 .contenedor-derecho {
-
+   
     flex: 1;
     display: flex;
     flex-direction: column;
