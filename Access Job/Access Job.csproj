@@ -169,6 +169,7 @@
     <Content Include="Content\Style.css" />
     <Content Include="Content\stylemenuacc.css" />
     <Content Include="Content\stylep.css" />
+    <Content Include="Content\Videos\job.mp4" />
     <Content Include="Content\Videos\video1.mp4" />
     <Content Include="Content\Videos\woman.mp4" />
     <Content Include="favicon.ico" />

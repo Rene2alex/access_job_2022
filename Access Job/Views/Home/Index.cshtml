@@ -2,6 +2,36 @@
     ViewBag.Title = "Home Page";
 }
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div id="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    
+
+    <!-- JavaScript para mostrar el contenido después de cargar -->
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById('loader-container').style.display = 'none';
+            document.getElementById('content').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
 
 
 <div class="esoacio1" id="ACCESS-JOB">
@@ -11,7 +41,7 @@
     <section id="video">
         <div>
             <video autoplay muted loop id="video-background">
-                <source src="~/Content/Videos/video1.mp4" type="video/mp4">
+                <source src="~/Content/Videos/job.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
             </video>
         </div>
@@ -144,7 +174,7 @@
                                 APP móvil
                             </p>
                             <div class="text-center botoncon">
-                                <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
+                                <a href="http://20.254.40.196:9095" class="btn btn-primary btn-block botonser mx-auto">Suscribirse</a>
                             </div>
 
                             <div style="padding: 10px;">
@@ -171,7 +201,7 @@
                                 APP móvil
                             </p>
                             <div class="text-center botoncon">
-                                <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
+                                <a href="http://20.254.40.196:9095" class="btn btn-primary btn-block botonser mx-auto">Suscribirse</a>
                             </div>
                             <div style="padding: 10px;">
                             </div>
@@ -195,7 +225,7 @@
                                 APP móvil
                             </p>
                             <div class="text-center botoncon">
-                                <button class="btn btn-primary btn-block botonser mx-auto">Suscribirse</button>
+                                <a href="http://20.254.40.196:9095" class="btn btn-primary btn-block botonser mx-auto">Suscribirse</a>
                             </div>
 
                             <div style="padding: 10px;">
