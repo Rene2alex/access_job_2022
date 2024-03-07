@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <link rel="icon" href="~/Content/Imagenes/accessJob_logo.png" type="image/png">
@@ -9,7 +8,87 @@
     <title>ACCESS JOB</title>
     @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/Style.css")
+    @Styles.Render("~/Content/Stylep.css")
+    @Styles.Render("~/Content/stylemenuacc.css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!--Style estilos-->
+
+</head>
+
+
+<body>
+    <!--menu-->
+    <header>
+        <div class="navbar navbar-inverse navbar-fixed-top fondoNv">
+            <!-- NAVBAR MENU -->
+            <div class="navegador_largo">
+                <div class="navbar-header ">
+                    <button type="button" class="toggle-menu" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span></span>
+                    </button>
+
+                    <!------------------------------------------------------ LOGO ---------------------------------------------->
+                    <div class="row ">
+                        <img src="~/Content/Imagenes/accessJob_imagoc.png" alt="logo" class="logo_accessJob_imagoc" />
+                        <img src="~/Content/Imagenes/accessJob_logoc.png" alt="logo" class="logo_accessJob_logo" />
+                    </div>
+                </div>
+                <!------------------------------------------------------ contenido ---------------------------------------------->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right browser-layout_2">
+                        <li class="browser-layout"><a href="#ACCESS-JOB">ACCESS JOB</a></li>
+                        <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates2()">NOSOTROS</a></li>
+                        <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates1()">SERVICIOS</a></li>
+                        <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates3()">CONTACTO</a></li>
+                        <li class="browser-layout">@Html.ActionLink("OFERTAS", "Index", "Home")</li>
+                        <li class="browser-layout">@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
+                        <li>
+                            <button class="blazul" type="button" onclick="redireccionar()">
+                                <span class="bi bi-house-door-fill"></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+              
+                    <button class="toggle-menu">
+                        <span></span>
+                    </button>
+              
+            </div>
+        </div>
+    </header>
+
+    <!--menú-->
+    <div id="menu" class="">
+        <button class="toggle-menu">
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#ACCESS-JOB">ACCESS JOB</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToCoordinates2()">NOSOTROS</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToCoordinates1()">SERVICIOS</a></li>
+                <li><a href="javascript:void(0);" onclick="scrollToCoordinates3()">CONTACTO</a></li>
+                <li>@Html.ActionLink("OFERTAS", "Index", "Home")</li>
+                <li>@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
+                <li>
+
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <!--fin menú-->
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- JavaScript -->
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
 
     <script>
         function scrollToCoordinates1() {
@@ -50,12 +129,14 @@
 
         function scrollToCoordinates3() {
             var x, y;
-
-            // Detectar el tipo de dispositivo
-            if (window.innerWidth <= 768) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
+            if (window.innerWidth <= 360) {
+                // Coordenadas para dispositivos móviles con ancho menor o igual a 360px
+                x = 0;
+                y = 3010; // Ajusta estas coordenadas según lo necesario
+            }else  if (window.innerWidth <= 768) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
                 // Coordenadas para dispositivos móviles
                 x = 0;
-                y = 3030;
+                y = 2740;
             } else {
                 // Coordenadas para computadoras
                 x = 0;
@@ -66,55 +147,22 @@
             window.scrollTo(x, y);
         }
 
+        function redireccionar() {
+            window.open("https://infrusch.com.mx/", "_blank");
+        }
+
+        $(document).ready(function () {
+            $(".toggle-menu").click(function () {
+                $(this).toggleClass("active");
+                $("#menu").toggleClass("open");
+            });
+
+            //cerrar menu
+            $('#menu ul li a').click(function () {
+                $("#menu").removeClass("open");
+                $(".toggle-menu").removeClass("active");
+            });
+        });
     </script>
-
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top fondoNv">
-
-        <div class="navegador_largo">
-            <div class="navbar-header ">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="row ">
-                    <img src="~/Content/Imagenes/accessJob_imagoc.png" alt="logo" class="logo_accessJob_imagoc" />
-                    <img src="~/Content/Imagenes/accessJob_logoc.png" alt="logo" class="logo_accessJob_logo" />
-                </div>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right browser-layout_2">
-                    <li class="browser-layout"><a href="#ACCESS-JOB">ACCESS JOB</a></li>
-                    <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates2()">NOSOTROS</a></li>
-                    <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates1()">SERVICIOS</a></li>
-                    <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates3()">CONTACTO</a></li>
-
-                    <li class="browser-layout">@Html.ActionLink("OFERTAS", "Index", "Home")</li>
-                    <li class="browser-layout">@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
-                    <li class="blazul">@Html.ActionLink("Login", "Index", "Home", null, new { target = "_blank", href = "https://infrusch.com.mx/" })</li>
-
-
-                </ul>
-            </div>
-
-
-
-        </div>
-
-    </div>
-
-
-    <div>
-        @RenderBody()
-    </div>
-
-
-    
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
-

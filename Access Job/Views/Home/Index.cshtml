@@ -211,27 +211,30 @@
 
 
 
-    <section id="contacto" >
-        <div class="contacto-content" >
+    <section id="contacto">
+        <div class="contacto-content">
             <div class="contenedor-izquierdo fondoc_contacto">
                 <div class="formulario ">
                     <h2 class="mensaje">Mensaje</h2>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" >
+                    <form action="@Url.Action("SaveContact", "Home")" method="post">
+                        @Html.AntiForgeryToken()
 
-                    <label for="correo">Correo:</label>
-                    <input type="email" placeholder="Correo" id="correo" name="correo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="Nombre" id="nombre" name="nombre">
 
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" placeholder="Teléfono" id="Teléfono" name="Teléfono">
+                        <label for="correo">Correo:</label>
+                        <input type="email" placeholder="Correo" id="correo" name="correo">
 
-                    <div class="form-floating">
-                        <label for="Mensaje">Mensaje:</label>
-                        <textarea class="form-control" placeholder="Mensaje" id="Mensaje" style="height: 100px;"></textarea>
-                    </div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" placeholder="Teléfono" id="telefono" name="telefono">
 
-                    <button style="justify-content:center" type="button">Enviar</button>
+                        <div class="form-floating">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px;" name="mensaje"></textarea>
+                        </div>
 
+                        <button style="justify-content:center" type="submit">Enviar</button>
+                    </form>
                 </div>
 
             </div>
@@ -283,7 +286,6 @@
     </section>
 
 </div>
-
 
 
 <footer>

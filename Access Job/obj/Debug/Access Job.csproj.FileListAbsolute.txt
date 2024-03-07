@@ -84,3 +84,7 @@ C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\obj\Debug\Access Job.
 C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\obj\Debug\Access Job.csproj.CopyComplete
 C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\obj\Debug\Access Job.dll
 C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\obj\Debug\Access Job.pdb
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\EntityFramework.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\EntityFramework.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\EntityFramework.SqlServer.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\EntityFramework.SqlServer.xml
