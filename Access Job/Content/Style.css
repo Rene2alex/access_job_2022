@@ -440,7 +440,7 @@ img {
         box-sizing: border-box;
         border: 3px solid #b0dcf4; /* Borde negro */
         border-radius: 5px; /* Puntas redondeadas para los campos */
-        color: #b0dcf4;
+        color: #010609;
     }
 
 @media screen and (max-width: 767px) {
@@ -748,6 +748,7 @@ img {
     color: #fff;
     margin-right: 5px;
     height: 60px;
+    color: ivory;
 }
 
 
