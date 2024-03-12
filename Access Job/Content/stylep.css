@@ -1,92 +1,5 @@
 ﻿/*navegaccion*/
-.browser-layout {
-    display: flex;
-    height: 40px;
-    margin-left: 10px; /* Espacio entre los elementos */
-    border-width: 0px; /* Cambia el ancho del borde */
-    border-radius: 18px 0px 0 0; /* Cambia el estilo del borde (en este caso, sólido) */
-    background-color: #7ecdf4; /* Color de fondo azul */
 
-    text-align: center; /* Centra el texto horizontalmente */
-    color: white; /* Color del texto */
-    font-size: 18px; /* Tamaño de fuente del texto */
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    /* Esto deshabilitará la interacción y la selección en diferentes navegadores */
-    cursor: default;
-    /* Cambiar el cursor para que no parezca interactivo */
-    overflow: hidden; /* Evita que el contenido se desborde del contenedor */
-}
-
-.blazul {
-    background-color: #292c7e; /* Color de fondo azul */
-    display: flex;
-    height: 40px;
-    margin-left: 10px; /* Espacio entre los elementos */
-    border-width: 0px; /* Cambia el ancho del borde */
-    border-radius: 5px 5px 5px 5px; /* Cambia el estilo del borde (en este caso, sólido) */
-    text-align: center; /* Centra el texto horizontalmente */
-    color: white; /* Color del texto */
-    font-size: 25px; /* Tamaño de fuente del texto */
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    /* Esto deshabilitará la interacción y la selección en diferentes navegadores */
-    cursor: default;
-    /* Cambiar el cursor para que no parezca interactivo */
-    overflow: hidden; /* Evita que el contenido se desborde del contenedor */
-}
-
-.browser-layout_2 {
-    text-decoration: none;
-    padding-top: 10px;
-    padding-right: 30px;
-    justify-content: center;
-}
-
-
-.navbar-inverse .navbar-nav > li > a {
-    color: white;
-}
-
-
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    padding: 23px;
-    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
-}
-
-.navegador_largo {
-    width: 100%; /* Cambia el valor del ancho según tus necesidades */
-    margin: auto; /* Esto centra el contenedor horizontalmente */
-    /* También puedes ajustar el alto del contenedor si es necesario */
-    /* height: 1000px; */
-}
-
-.navbar-inverse {
-    border-color: navajowhite;
-}
-
-.fondoNv {
-    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
-}
-
-
-.imagenZ {
-    width: 40%;
-    height: 40%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 /*navegaccion*/
 
@@ -147,7 +60,7 @@ img {
 
 
 /********Pantallas 768px*********/
-@media only screen and (min-width: 380px) and (max-width: 768px) {
+@media only screen and (min-width: 380px) and (max-width: 1020px) {
     body {
         padding-bottom: 0;
         right: 0;
@@ -165,6 +78,7 @@ img {
         visibility: visible;
         right: 20px; /* Ajusta la posición inicial a la derecha */
         top: 20px;
+        border-radius: 5px 5px 5px 5px;
     }
 
     .navbar-toggler {
@@ -192,6 +106,7 @@ img {
         visibility: visible;
         right: 20px; /* Ajusta la posición inicial a la derecha */
         top: 20px;
+        border-radius: 5px 5px 5px 5px;
     }
 
     .navbar-toggler {
@@ -202,32 +117,3 @@ img {
 
 
 
-
-
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    body {
-        padding-bottom: 0;
-        right: 0;
-        color: #fff;
-    }
-
-    #idMenu .ajuste-logo {
-        position: fixed;
-        width: 20%;
-        margin-top: 22px;
-        margin-left: -30px;
-    }
-
-    #idMenu p {
-        font-size: 50px;
-        color: #fff;
-    }
-
-    #idMenu .navbar {
-        position: fixed;
-        margin-left: 230px;
-        padding: 5px;
-        top: 20px;
-    }
-}

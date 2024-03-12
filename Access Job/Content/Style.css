@@ -11,7 +11,9 @@
     }
 }
 
-
+#content {
+    margin-top: 0;
+}
 
 
 .container {
@@ -158,8 +160,36 @@ footer {
 
 
 
-
 /*navegaccion*/
+/* centrado de la imagen  */
+
+@media only screen and (min-width: 1020px) and (max-width: 1271px) {
+    .navbar-header .row {
+        text-align: center; /* Alinea horizontalmente los elementos dentro de la fila */
+    }
+
+        .navbar-header .row img {
+            max-width: 10%; /* Ajusta el ancho máximo de las imágenes para evitar que se desborden */
+            height: auto; /* Mantiene la proporción de aspecto de las imágenes */
+            pointer-events: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+   
+    .navbar-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+   
+}
+
+
+
 
 .logo_accessJob_imagoc {
     height: 90px;

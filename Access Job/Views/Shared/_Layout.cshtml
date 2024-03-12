@@ -30,30 +30,33 @@
                     </button>
 
                     <!------------------------------------------------------ LOGO ---------------------------------------------->
-                    <div class="row ">
+                    <div class="row">
                         <img src="~/Content/Imagenes/accessJob_imagoc.png" alt="logo" class="logo_accessJob_imagoc" />
                         <img src="~/Content/Imagenes/accessJob_logoc.png" alt="logo" class="logo_accessJob_logo" />
                     </div>
                 </div>
                 <!------------------------------------------------------ contenido ---------------------------------------------->
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right browser-layout_2">
-                        <li class="browser-layout"><a href="#ACCESS-JOB">ACCESS JOB</a></li>
-                        <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates2()">NOSOTROS</a></li>
-                        <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates1()">SERVICIOS</a></li>
-                        <li class="browser-layout"><a href="javascript:void(0);" onclick="scrollToCoordinates3()">CONTACTO</a></li>
-                        <li class="browser-layout">@Html.ActionLink("OFERTAS", "Index", "Home")</li>
-                        <li class="browser-layout">@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
-                        <li class="blazul">
-                            <a href="htttps://infrusch.com.mx" target="_blank">
-                                <i class="bi bi-door-open-fill"></i>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="navbar-collapse collapse main-nav">
+                    <div class="navbar-center">
+                        <ul class="nav navbar-nav navbar-right browser-layout_2">
+                            <li class="browser-layout"><a href="#ACCESS-JOB">ACCESS JOB</a></li>
+
+                            <li class="browser-layout"><a href="#nosotros">NOSOTROS</a></li>
+                            <li class="browser-layout"><a href="#servicios">SERVICIOS</a></li>
+                            <li class="browser-layout"><a href="#contacto">CONTACTO</a></li>
+                            <li class="browser-layout">@Html.ActionLink("OFERTAS", "Index", "Home")</li>
+                            <li class="browser-layout">@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
+                            <li>
+                                <button class="blazul" onclick="redireccionar()"><i class="bi bi-door-open-fill"></i></button>
+                            </li>
+
+                        </ul>
+                    </div>
+                   
                 </div>
               
                     <button class="toggle-menu">
-                        <span></span>
+                        <span><i></i></span>
                     </button>
               
             </div>
@@ -65,18 +68,16 @@
         <button class="toggle-menu">
             <span></span>
         </button>
-        <nav class="main-nav">
+        <nav class="main-nav navbar">
             <ul>
                 <li><a href="#ACCESS-JOB">ACCESS JOB</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToCoordinates2()">NOSOTROS</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToCoordinates1()">SERVICIOS</a></li>
-                <li><a href="javascript:void(0);" onclick="scrollToCoordinates3()">CONTACTO</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
                 <li>@Html.ActionLink("OFERTAS", "Index", "Home")</li>
                 <li>@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
-                <li>
-
-                </li>
             </ul>
+
         </nav>
 
     </div>
@@ -91,23 +92,39 @@
     @Scripts.Render("~/bundles/bootstrap")
 
     <script>
+
+
         function scrollToCoordinates1() {
             var x, y;
 
-            // Detectar el tipo de dispositivo
-            if (window.innerWidth <= 768) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
-                // Coordenadas para dispositivos móviles
+            // Ajusta estas coordenadas según lo necesario
+            if (window.innerWidth > 350 && window.innerWidth <= 767) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
+                // Coordenadas para dispositivos móviles de tamaño pequeño
                 x = 0;
                 y = 600;
-            } else {
+            }
+            else if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+                // Otras coordenadas para tamaños de pantalla entre 1025px y 1286px
+                x = 0;
+                y = 750; // Ajusta estas coordenadas según lo necesario
+            }
+            else if (window.innerWidth > 1025 && window.innerWidth <= 1286) {
+                // Otras coordenadas para tamaños de pantalla entre 1025px y 1286px
+                x = 200;
+                y = 860; // Ajusta estas coordenadas según lo necesario
+            }
+            else if (window.innerWidth > 1287 && window.innerWidth <= 1920) {
                 // Coordenadas para computadoras
                 x = 0;
-                y = 1184;
+                y = 1180;
             }
 
             // Realizar el desplazamiento
             window.scrollTo(x, y);
         }
+
+
+
 
         function scrollToCoordinates2() {
             var x, y;
@@ -151,6 +168,10 @@
             window.open("http://20.254.40.196:9095", "_blank");
         }
 
+
+
+
+
         $(document).ready(function () {
             $(".toggle-menu").click(function () {
                 $(this).toggleClass("active");
@@ -163,6 +184,35 @@
                 $(".toggle-menu").removeClass("active");
             });
         });
+
+  
+
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1); // Obtener el ID del destino del enlace
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    let offset;
+                    if (window.innerWidth >= 1020 && window.innerWidth <= 1271) {
+                        offset = 150; // Offset para pantallas entre 1020px y 1271px de ancho
+                    } else {
+                        offset = 110; // Offset predeterminado para otras pantallas
+                    }
+
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth' // Desplazamiento suave
+                    });
+                }
+            });
+        });
+
+
     </script>
 </body>
 </html>
