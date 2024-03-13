@@ -244,27 +244,27 @@
                     <div class="contenedor-izquierdo fondoc_contacto">
                         <div class="formulario ">
                             <h2 class="mensaje">Mensaje</h2>
-                            <form action="@Url.Action("SendData", "Home")" method="post">
+                            
+                                @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+                                {
+                                    <label for="nombre">Nombre:</label>
+                                    <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
 
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" placeholder="nombre" id="nombre" name="nombre">
+                                    <label for="correo">Correo:</label>
+                                    <input type="email" placeholder="Correo" id="correo" name="correo" required>
 
-                                <label for="correo">Correo:</label>
-                                <input type="email" placeholder="Correo" id="correo" name="correo">
+                                    <label for="telefono">Teléfono:</label>
+                                    <input type="tel" placeholder="Teléfono" id="telefono" name="telefono">
 
-                                <label for="telefono">Teléfono:</label>
-                                <input type="tel" placeholder="Teléfono" id="telefono" name="telefono">
+                                    <div class="form-floating">
+                                        <label for="mensaje">Mensaje:</label>
+                                        <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px;" name="mensaje" required></textarea>
+                                    </div>
 
-                                <div class="form-floating">
-                                    <label for="mensaje">Mensaje:</label>
-                                    <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px;" name="mensaje"></textarea>
-                                </div>
-
-                                <button style="justify-content:center" type="submit">Enviar <i class="bi bi-send-fill"></i></button>
-                            </form>
-
+                                    <button style="justify-content:center" type="submit">Enviar <i class="bi bi-send-fill"></i></button>
+                                }
+                      
                         </div>
-
                     </div>
 
                     <div class="contenedor-derecho">

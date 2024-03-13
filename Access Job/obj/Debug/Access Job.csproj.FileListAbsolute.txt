@@ -178,3 +178,34 @@ C:\Users\Alamo\Desktop\acces\Access Job\obj\Debug\Access Job.csproj.CoreCompileI
 C:\Users\Alamo\Desktop\acces\Access Job\obj\Debug\Access Job.csproj.CopyComplete
 C:\Users\Alamo\Desktop\acces\Access Job\obj\Debug\Access Job.dll
 C:\Users\Alamo\Desktop\acces\Access Job\obj\Debug\Access Job.pdb
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\BouncyCastle.Cryptography.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\Google.Protobuf.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\K4os.Compression.LZ4.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\K4os.Hash.xxHash.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\MySql.Data.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Buffers.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Configuration.ConfigurationManager.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.IO.Pipelines.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Memory.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Numerics.Vectors.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\ZstdSharp.dll
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\BouncyCastle.Cryptography.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\Google.Protobuf.pdb
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\Google.Protobuf.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\K4os.Compression.LZ4.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\K4os.Compression.LZ4.Streams.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\K4os.Hash.xxHash.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\MySql.Data.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Buffers.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.IO.Pipelines.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Memory.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Numerics.Vectors.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Rene Alejandro\source\repos\Access Job\Access Job\bin\System.Threading.Tasks.Extensions.xml
