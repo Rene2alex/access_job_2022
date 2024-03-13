@@ -46,7 +46,7 @@ namespace Access_Job.Controllers
             // Enviar correo electrónico
             MailMessage mail = new MailMessage();
             mail.From = new MailAddress("alfredodanielramos123456@gmail.com"); // Coloca tu dirección de correo electrónico
-            mail.To.Add("Anyi.moralesmtz@gmail.com");
+            mail.To.Add("rene230802@gmail.com");
             mail.Subject = "Nuevo mensaje desde el formulario";
             mail.Body = $"Nombre: {nombre}\nCorreo: {correo}\nTeléfono: {telefono}\nMensaje: {mensaje}";
 
