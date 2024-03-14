@@ -390,16 +390,17 @@ img {
 
 
 
-
-
-
-
-/* el color del fondo */
-#contacto {
+.contenedor-derecho {
     color: white;
     background-image: url('Imagenes/fondocomentario.png');
-    background-size: cover;
+    background-size: contain;
+    border-radius: 32px;
 }
+
+
+
+
+
 
 
 
@@ -512,7 +513,7 @@ img {
     width: 400px;
     text-align: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-    color: #212d6f;
+    color: #0804dd;
 }
 
 .redes-button {
@@ -814,4 +815,12 @@ img {
 /* Ocultar contenido principal */
 .hidden {
     display: none;
+}
+
+.titulo7{
+    font-weight: bold;
+}
+
+.fondo_T1{
+    font-weight: bold;
 }
