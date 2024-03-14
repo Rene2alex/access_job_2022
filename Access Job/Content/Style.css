@@ -139,19 +139,42 @@ footer {
 
 
 
+
+
 .textoper2 {
-    padding-top: 0px;
+    padding-top: 70px;
+    text-align: justify;
     color: #83d0f6;
-    font-size: 15px;
+    font-size: 24px;
 }
 
-@media (min-width: 768px) {
+
+@media (max-width: 1018px) {
     .textoper2 {
-        padding-top: 100px; /* Espacio adicional arriba */
+        padding-top: 20px; /* Espacio adicional arriba */
         color: #83d0f6;
-        font-size: 25px;
+        font-size: 17px;
     }
 }
+
+@media only screen and (min-width: 1018px) and (max-width: 1078px) {
+    .textoper2 {
+        padding-top: 35px;
+        color: #83d0f6;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1078px) and (max-width: 1211px) {
+    .textoper2 {
+        font-size: 22px;
+        color: #83d0f6;
+        padding-top: 55px;
+    }
+}
+
+
+
 
 /* nostros apartado2 */
 

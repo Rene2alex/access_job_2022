@@ -60,7 +60,7 @@
 
 
 /********Pantallas 768px*********/
-@media only screen and (min-width: 380px) and (max-width: 1020px) {
+@media only screen and (min-width: 380px) and (max-width: 1018px) {
     body {
         padding-bottom: 0;
         right: 0;
