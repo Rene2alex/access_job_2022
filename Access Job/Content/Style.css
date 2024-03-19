@@ -107,6 +107,7 @@ footer {
 .imagen_imagen2 {
     max-width: 58%;
     height: auto;
+    margin-top:-5px;
 }
 
 @media (max-width: 768px) {
@@ -384,7 +385,6 @@ img {
 }
 
 
-
 .fondo_sec {
     background: #d8f0fc;
     padding-top: 20px; /* Espacio adicional arriba */
@@ -412,18 +412,14 @@ img {
 /*Planes y Servicios*/
 
 
-
 .contenedor-derecho {
     color: white;
     background-image: url('Imagenes/fondocomentario.png');
     background-size: contain;
-    border-radius: 32px;
+    border-radius: -4px;
+    height: 532px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
 }
-
-
-
-
-
 
 
 
@@ -532,7 +528,7 @@ img {
 
 
 .redes-y-ubicacion {
-    border-radius: 10px;
+    border-radius: 55px;
     width: 400px;
     text-align: center;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -544,9 +540,9 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 8px;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 79px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 237px;
 }
