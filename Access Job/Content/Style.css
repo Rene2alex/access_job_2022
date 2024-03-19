@@ -588,8 +588,8 @@ img {
 @media (max-width: 768px) {
     .redes-y-ubicacion {
         background-image: url('Imagenes/fondocomentario.png');
-            border-radius: 50px;
-        width: 80%; /* Modificado para que se adapte al ancho de la pantalla */
+            border-radius: 40px;
+        width: 90%; /* Modificado para que se adapte al ancho de la pantalla */
         margin: 0 auto; /* Centra el contenedor horizontalmente */
         text-align: center;
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
@@ -612,8 +612,8 @@ img {
     .redes-button {
         width: 100%; /* Modificado para que se adapte al ancho de la pantalla */
         margin: 0 auto; /* Centra el botón horizontalmente */
-        margin-bottom: 10px; /* Agrega margen inferior para separar los botones */
-        padding: 15px;
+        margin-bottom: 5px; /* Agrega margen inferior para separar los botones */
+        padding: 10px;
         background-color: #fff;
         border-radius: 50px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
