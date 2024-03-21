@@ -11,6 +11,12 @@
     }
 }
 
+    @media only screen and (min-width: 768px) and (max-width: 1018px) {
+        .esoacio1 {
+            padding: 0px;
+        }
+    }
+
 #content {
     margin-top: 0;
 }
@@ -105,7 +111,7 @@ footer {
 /* nostros apartado2 */
 
 .imagen_imagen2 {
-    max-width: 58%;
+    max-width: 60%;
     height: auto;
     margin-top:-5px;
 }
@@ -140,40 +146,46 @@ footer {
 
 
 
-
-
 .textoper2 {
-    padding-top: 70px;
+    padding-top: 50px;
     text-align: justify;
     color: #83d0f6;
     font-size: 24px;
 }
 
 
-@media (max-width: 1018px) {
+
+@media (max-width: 767px) {
     .textoper2 {
-        padding-top: 20px; /* Espacio adicional arriba */
+        padding-top: 25px;
+        text-align: justify;
         color: #83d0f6;
-        font-size: 17px;
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 950px) {
+    .textoper2 {
+        padding-top: 4%; /* Espacio de relleno del 5% del ancho del contenedor */
+        text-align: justify;
+        color: #83d0f6;
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 950px) and (max-width: 1200px) {
+    .textoper2 {
+        padding-top: 4%; /* Espacio de relleno del 5% del ancho del contenedor */
+        text-align: justify;
+        color: #83d0f6;
+        font-size: 18px;
     }
 }
 
-@media only screen and (min-width: 1018px) and (max-width: 1078px) {
-    .textoper2 {
-        padding-top: 35px;
-        color: #83d0f6;
-        font-size: 20px;
-    }
-}
 
-@media only screen and (min-width: 1078px) and (max-width: 1211px) {
-    .textoper2 {
-        font-size: 22px;
-        color: #83d0f6;
-        padding-top: 55px;
-    }
-}
 
+
+
+
+    
 
 
 

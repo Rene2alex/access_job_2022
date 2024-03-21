@@ -45,11 +45,12 @@ namespace Access_Job.Controllers
 
             // Enviar correo electrónico
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("alfredodanielramos123456@gmail.com"); // Coloca tu dirección de correo electrónico
-            mail.To.Add("rene230802@gmail.com");
-            mail.Subject = "Nuevo mensaje desde el formulario";
-            mail.Body = $"Nombre: {nombre}\nCorreo: {correo}\nTeléfono: {telefono}\nMensaje: {mensaje}";
+            mail.From = new MailAddress("alfredodanielramos123456@gmail.com"); // Coloco la dirección de correo electrónico quien lo envia
+            mail.To.Add("rene230802@gmail.com"); // Coloco el corrego de quien lo resibe 
+            mail.Subject = "Nuevo mensaje desde el formulario"; // en mensaje 
+            mail.Body = $"Nombre: {nombre}\nCorreo: {correo}\nTeléfono: {telefono}\nMensaje: {mensaje}"; // los datos que se mostraran
 
+            // configuraccion del servidor 
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
             smtp.Port = 587;
             smtp.Credentials = new NetworkCredential("alfredodanielramos123456@gmail.com", "cxrqgqhylkwprumv"); // Coloca tus credenciales
