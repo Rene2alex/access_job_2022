@@ -7,6 +7,8 @@ using System.Linq;
 using System.Web;
 using System.Net;
 using System.Net.Mail;
+using System.IO;
+
 
 
 
@@ -60,6 +62,39 @@ namespace Access_Job.Controllers
             // Redirigir al Index con un ancla para el apartado "CONTACTO"
             return RedirectToAction("Index", new RouteValueDictionary { { "scrollTo", "contacto" } });
         }
+
+        // Método para descargar el documento 1
+        public ActionResult DescargarDocumento1()
+        {
+            string rutaDocumento1 = Server.MapPath("~/Content/Documentos/Documento1.pdf");  // Ruta absoluta del Documento 1
+            return DescargarArchivo(rutaDocumento1);
+
+
+        }
+
+        // Método para descargar el documento 2
+        public ActionResult DescargarDocumento2()
+        {
+            string rutaDocumento2 = Server.MapPath("~/Content/Documentos/Documento2.pdf"); // Ruta absoluta del Documento 2
+            return DescargarArchivo(rutaDocumento2);
+        }
+
+        // Método para descargar un archivo dado una ruta
+        private ActionResult DescargarArchivo(string rutaArchivo)
+        {
+            if (System.IO.File.Exists(rutaArchivo))
+            {
+                byte[] fileBytes = System.IO.File.ReadAllBytes(rutaArchivo);
+                string fileName = Path.GetFileName(rutaArchivo);
+                return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+            }
+            else
+            {
+                // Manejar el caso donde el archivo no existe
+                return HttpNotFound();
+            }
+        }
+
 
 
         public ActionResult About()

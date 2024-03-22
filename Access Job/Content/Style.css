@@ -147,7 +147,7 @@ footer {
 
 
 .textoper2 {
-    padding-top: 50px;
+    padding-top: 20px;
     text-align: justify;
     color: #83d0f6;
     font-size: 24px;
@@ -596,6 +596,13 @@ img {
     height: auto;
 }
 
+.posicioncentro {
+    text-align: center;
+    padding: 20px;
+}
+
+
+
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 768px) {
     .redes-y-ubicacion {
@@ -756,7 +763,7 @@ img {
     background-color: #7cccf4; /* Color de fondo */
     border-radius: 10px; /* Bordes redondeados */
     width: 100px; /* Ancho del botón */
-    height: 43px; /* Altura del botón */
+    height: 35px; /* Altura del botón */
 
     color: black;
 }
@@ -854,4 +861,151 @@ img {
 
 .fondo_T1{
     font-weight: bold;
+}
+
+
+
+
+/* Estilos de la mesa de ayuda GUIAS RAPIDAS*/
+
+.GUIASRAPIDAS {
+    text-align: center;
+  /*  background-color: #ffffff;*/
+}
+
+
+.imppdf {
+    width: 40%; /* Ancho del botón */
+    height: 40%; /* Altura del botón */
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.textog {
+    color: black;
+    text-align:center;
+}
+
+.fondo-guia {
+    background-color: #d8f0fc;
+
+} 
+
+/* Estilos de la mesa de ayuda GUIAS RAPIDAS*/
+
+
+/* Estilos de whatsapp*/
+.whatsapp-float {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 24px;
+
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+    .whatsapp-float i {
+        margin-top: 2px;
+    }
+/* Estilos de whatsappS*/
+
+
+
+
+
+
+
+.TitleMesadeayuda {
+    width: auto;
+    color: #000000;
+
+
+    font-family: Inter;
+   
+
+    opacity: 1;
+    text-align: center;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #d8f0fc;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+
+
+.Card1,
+.Card2,
+.Card3 {
+    flex-basis: calc(33.33% - 1px);
+  
+}
+
+.item video {
+    width: 100%;
+   
+}
+
+.category-description {
+    display: flex;
+    align-items: center;
+}
+
+.circle-pasos {
+    width: 43px;
+    height: 41px;
+    border-radius: 80%;
+    background-color: #ffffff;
+    color: #a94442;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    -webkit-text-stroke-width: medium;
+    font-size: initial;
+    font-family: sans-serif;
+}
+
+.video-trigger {
+   
+    color:black;
+}
+
+.item {
+    background-color: #fff;
+    width: calc(120% - calc(4.8rem * 2));
+  
+    padding: 1.8rem;
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.7rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-1rem);
+    backdrop-filter: blur(1.5rem);
+}
+
+@media screen and (max-width: 768px) {
+    .Card1,
+    .Card2,
+    .Card3 {
+        flex-basis: 110%;
+    }
 }

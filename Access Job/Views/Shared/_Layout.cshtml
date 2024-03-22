@@ -44,174 +44,174 @@
                             <li class="browser-layout"><a href="#nosotros">NOSOTROS</a></li>
                             <li class="browser-layout"><a href="#servicios">SERVICIOS</a></li>
                             <li class="browser-layout"><a href="#contacto">CONTACTO</a></li>
-                            <li class="browser-layout">@Html.ActionLink("OFERTAS", "Index", "Home")</li>
-                            <li class="browser-layout">@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
+                            <!--      <li class="browser-layout">@Html.ActionLink("OFERTAS", "Index", "Home")</li>-->
+                            <li class="browser-layout"><a href="#mesaAyuda">MESA DE AYUDA</a> </li>
                             <li>
                                 <button class="blazul" onclick="redireccionar()"><i class="bi bi-door-open-fill"></i></button>
                             </li>
 
                         </ul>
                     </div>
-                   
+
                 </div>
-              
+
                     <button class="toggle-menu">
                         <span><i></i></span>
                     </button>
-              
+
             </div>
         </div>
     </header>
 
     <!--menú-->
-    <div id="menu" class="">
-        <button class="toggle-menu">
-            <span></span>
-        </button>
-        <nav class="main-nav navbar">
-            <ul>
-                <li><a href="#ACCESS-JOB">ACCESS JOB</a></li>
-                <li><a href="#nosotros">NOSOTROS</a></li>
-                <li><a href="#servicios">SERVICIOS</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
-                <li>@Html.ActionLink("OFERTAS", "Index", "Home")</li>
-                <li>@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
-            </ul>
+                            <div id="menu" class="">
+                                <button class="toggle-menu">
+                                    <span></span>
+                                </button>
+                                <nav class="main-nav navbar">
+                                    <ul>
+                                        <li><a href="#ACCESS-JOB">ACCESS JOB</a></li>
+                                        <li><a href="#nosotros">NOSOTROS</a></li>
+                                        <li><a href="#servicios">SERVICIOS</a></li>
+                                        <li><a href="#contacto">CONTACTO</a></li>
+                                        <!--  <li>@Html.ActionLink("OFERTAS", "Index", "Home")</li>-->
+                                        <li>@Html.ActionLink("MESA DE AYUDA", "Index", "Home")</li>
+                                    </ul>
 
-        </nav>
+                                </nav>
 
-    </div>
-    <!--fin menú-->
+                            </div>
+                            <!--fin menú-->
 
-    <div>
-        @RenderBody()
-    </div>
+                            <div>
+                                @RenderBody()
+                            </div>
 
-    <!-- JavaScript -->
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+                            <!-- JavaScript -->
+                            @Scripts.Render("~/bundles/jquery")
+                            @Scripts.Render("~/bundles/bootstrap")
 
-    <script>
-
-
-        function scrollToCoordinates1() {
-            var x, y;
-
-            // Ajusta estas coordenadas según lo necesario
-            if (window.innerWidth > 350 && window.innerWidth <= 767) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
-                // Coordenadas para dispositivos móviles de tamaño pequeño
-                x = 0;
-                y = 600;
-            }
-            else if (window.innerWidth > 768 && window.innerWidth <= 1024) {
-                // Otras coordenadas para tamaños de pantalla entre 1025px y 1286px
-                x = 0;
-                y = 750; // Ajusta estas coordenadas según lo necesario
-            }
-            else if (window.innerWidth > 1025 && window.innerWidth <= 1286) {
-                x = 200;
-                y = 860; 
-            }
-            else if (window.innerWidth > 1287 && window.innerWidth <= 1920) {
-                // Coordenadas para computadoras
-                x = 0;
-                y = 1180;
-            }
-
-            // Realizar el desplazamiento
-            window.scrollTo(x, y);
-        }
+                            <script>
 
 
+                                function scrollToCoordinates1() {
+                                    var x, y;
 
+                                    // Ajusta estas coordenadas según lo necesario
+                                    if (window.innerWidth > 350 && window.innerWidth <= 767) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
+                                        // Coordenadas para dispositivos móviles de tamaño pequeño
+                                        x = 0;
+                                        y = 600;
+                                    }
+                                    else if (window.innerWidth > 768 && window.innerWidth <= 1024) {
+                                        // Otras coordenadas para tamaños de pantalla entre 1025px y 1286px
+                                        x = 0;
+                                        y = 750; // Ajusta estas coordenadas según lo necesario
+                                    }
+                                    else if (window.innerWidth > 1025 && window.innerWidth <= 1286) {
+                                        x = 200;
+                                        y = 860;
+                                    }
+                                    else if (window.innerWidth > 1287 && window.innerWidth <= 1920) {
+                                        // Coordenadas para computadoras
+                                        x = 0;
+                                        y = 1180;
+                                    }
 
-        function scrollToCoordinates2() {
-            var x, y;
-
-            // Detectar el tipo de dispositivo
-            if (window.innerWidth <= 768) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
-                // Coordenadas para dispositivos móviles
-                x = 0;
-                y = 330;
-            } else {
-                // Coordenadas para computadoras
-                x = 0;
-                y = 880;
-            }
-
-            // Realizar el desplazamiento
-            window.scrollTo(x, y);
-        }
-
-        function scrollToCoordinates3() {
-            var x, y;
-            if (window.innerWidth <= 360) {
-                // Coordenadas para dispositivos móviles con ancho menor o igual a 360px
-                x = 0;
-                y = 3010; // Ajusta estas coordenadas según lo necesario
-            }else  if (window.innerWidth <= 768) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
-                // Coordenadas para dispositivos móviles
-                x = 0;
-                y = 2740;
-            } else {
-                // Coordenadas para computadoras
-                x = 0;
-                y = 2070;
-            }
-
-            // Realizar el desplazamiento
-            window.scrollTo(x, y);
-        }
-
-        function redireccionar() {
-            window.open("http://20.254.40.196:9095", "_blank");
-        }
+                                    // Realizar el desplazamiento
+                                    window.scrollTo(x, y);
+                                }
 
 
 
 
+                                function scrollToCoordinates2() {
+                                    var x, y;
 
-        $(document).ready(function () {
-            $(".toggle-menu").click(function () {
-                $(this).toggleClass("active");
-                $("#menu").toggleClass("open");
-            });
+                                    // Detectar el tipo de dispositivo
+                                    if (window.innerWidth <= 768) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
+                                        // Coordenadas para dispositivos móviles
+                                        x = 0;
+                                        y = 330;
+                                    } else {
+                                        // Coordenadas para computadoras
+                                        x = 0;
+                                        y = 880;
+                                    }
 
-            //cerrar menu
-            $('#menu ul li a').click(function () {
-                $("#menu").removeClass("open");
-                $(".toggle-menu").removeClass("active");
-            });
-        });
+                                    // Realizar el desplazamiento
+                                    window.scrollTo(x, y);
+                                }
 
-  
+                                function scrollToCoordinates3() {
+                                    var x, y;
+                                    if (window.innerWidth <= 360) {
+                                        // Coordenadas para dispositivos móviles con ancho menor o igual a 360px
+                                        x = 0;
+                                        y = 3010; // Ajusta estas coordenadas según lo necesario
+                                    } else if (window.innerWidth <= 768) { // Considerando que el ancho para dispositivos móviles es de 768px o menos
+                                        // Coordenadas para dispositivos móviles
+                                        x = 0;
+                                        y = 2740;
+                                    } else {
+                                        // Coordenadas para computadoras
+                                        x = 0;
+                                        y = 2070;
+                                    }
 
-        document.querySelectorAll('.navbar a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+                                    // Realizar el desplazamiento
+                                    window.scrollTo(x, y);
+                                }
 
-                const targetId = this.getAttribute('href').substring(1); // Obtener el ID del destino del enlace
-                const targetElement = document.getElementById(targetId);
-
-                if (targetElement) {
-                    let offset;
-                    if (window.innerWidth >= 1020 && window.innerWidth <= 1271) {
-                        offset = 150; // Offset para pantallas entre 1020px y 1271px de ancho
-                    } else {
-                        offset = 110; // Offset predeterminado para otras pantallas
-                    }
-
-                    const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
-
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth' // Desplazamiento suave
-                    });
-                }
-            });
-        });
+                                function redireccionar() {
+                                    window.open("http://20.254.40.196:9095", "_blank");
+                                }
 
 
-    </script>
+
+
+
+                                $(document).ready(function () {
+                                    $(".toggle-menu").click(function () {
+                                        $(this).toggleClass("active");
+                                        $("#menu").toggleClass("open");
+                                    });
+
+                                    //cerrar menu
+                                    $('#menu ul li a').click(function () {
+                                        $("#menu").removeClass("open");
+                                        $(".toggle-menu").removeClass("active");
+                                    });
+                                });
+
+
+
+                                document.querySelectorAll('.navbar a').forEach(anchor => {
+                                    anchor.addEventListener('click', function (e) {
+                                        e.preventDefault();
+
+                                        const targetId = this.getAttribute('href').substring(1); // Obtener el ID del destino del enlace
+                                        const targetElement = document.getElementById(targetId);
+
+                                        if (targetElement) {
+                                            let offset;
+                                            if (window.innerWidth >= 1020 && window.innerWidth <= 1271) {
+                                                offset = 150; // Offset para pantallas entre 1020px y 1271px de ancho
+                                            } else {
+                                                offset = 110; // Offset predeterminado para otras pantallas
+                                            }
+
+                                            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+
+                                            window.scrollTo({
+                                                top: targetPosition,
+                                                behavior: 'smooth' // Desplazamiento suave
+                                            });
+                                        }
+                                    });
+                                });
+
+
+                            </script>
 </body>
 </html>

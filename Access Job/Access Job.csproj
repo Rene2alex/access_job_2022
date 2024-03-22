@@ -199,6 +199,7 @@
     <Content Include="Content\Imagenes\accessJob_imagotipo.png" />
     <Content Include="Content\Imagenes\accessJob_logo.png" />
     <Content Include="Content\Imagenes\accessJob_logoc.png" />
+    <Content Include="Content\Imagenes\facebook1.png" />
     <Content Include="Content\Imagenes\fondo2.jpeg" />
     <Content Include="Content\Imagenes\Fondo2C.jpeg" />
     <Content Include="Content\Imagenes\fondo3.jpeg" />
@@ -209,6 +210,8 @@
     <Content Include="Content\Imagenes\ic_login_usuario.png" />
     <Content Include="Content\Imagenes\imagen1.jpg" />
     <Content Include="Content\Imagenes\logo.png" />
+    <Content Include="Content\Imagenes\pdfdescarga.png" />
+    <Content Include="Content\Imagenes\pdfdescarga1.png" />
     <Content Include="Content\Imagenes\pngwing.com %281%29.png" />
     <Content Include="Content\Imagenes\pngwing.com %282%29.png" />
     <Content Include="Content\Imagenes\pngwing.com %283%29.png" />
@@ -230,6 +233,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Documentos\Documento1.pdf" />
+    <Content Include="Content\Documentos\Documento2.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
