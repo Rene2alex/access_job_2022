@@ -212,15 +212,11 @@
     <Content Include="Content\Imagenes\logo.png" />
     <Content Include="Content\Imagenes\pdfdescarga.png" />
     <Content Include="Content\Imagenes\pdfdescarga1.png" />
-    <Content Include="Content\Imagenes\pngwing.com %281%29.png" />
-    <Content Include="Content\Imagenes\pngwing.com %282%29.png" />
-    <Content Include="Content\Imagenes\pngwing.com %283%29.png" />
     <Content Include="Content\Imagenes\facebook.png" />
     <Content Include="Content\Imagenes\whatsapp.png" />
-    <Content Include="Content\Imagenes\Instagram.png" />
-    <Content Include="Content\Imagenes\pngwing.com.png" />
-    <Content Include="Content\Imagenes\Rectangle 52.png" />
     <Content Include="Content\Imagenes\video.jpg" />
+    <Content Include="Content\Imagenes\whatsapp1.png" />
+    <Content Include="Content\Imagenes\Youtube1.png" />
     <Content Include="Content\Style.css" />
     <Content Include="Content\stylemenuacc.css" />
     <Content Include="Content\stylep.css" />
@@ -233,8 +229,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\Documentos\Documento1.pdf" />
-    <Content Include="Content\Documentos\Documento2.pdf" />
+    <Content Include="Content\Documentos\Manual de Usuario App.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

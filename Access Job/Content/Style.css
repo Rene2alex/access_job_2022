@@ -1,64 +1,67 @@
-﻿
-
-.esoacio1 {
-    padding: 36px;
-}
-
-
-@media (max-width: 768px) {
-    .esoacio1 {
-        padding: 0px;
-    }
-}
-
-    @media only screen and (min-width: 768px) and (max-width: 1018px) {
-        .esoacio1 {
-            padding: 0px;
-        }
-    }
-
-#content {
-    margin-top: 0;
-}
-
-
+﻿/* Estilos del contenedor de la pagina */
 .container {
     width: 90%; /* Cambia el valor del ancho según tus necesidades */
     margin: 0 auto; /* Esto centra el contenedor horizontalmente */
     /* También puedes ajustar el alto del contenedor si es necesario */
     /* height: 1000px; */
 }
+/* Estilos del contenedor de la pagina */
 
 
-/* Establece la posición relativa, lo que significa que se posicionará con respecto a su posición original en el flujo del documento */
-/* la base  de la pagina*/
 
-footer {
-    position: relative;
-    /* Establece la altura del footer en 3 píxeles */
-    height: 3px;
-    /* Establece el ancho del footer al 100% del ancho disponible */
-    width: 100%;
-    /* Centra el contenido dentro del footer horizontalmente */
-    text-align: center;
-    /* Establece un relleno de 10 píxeles arriba y abajo y 0 a la izquierda y a la derecha */
-    padding: 0px 0;
+
+
+
+
+/* Estilos para el contenedor del loader */
+#loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
-    footer .imagec {
-        background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
-        pointer-events: none;
-        user-select: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
+
+/* Estilos para el loader */
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+/* Estilos para el contenedor del loader */
+
+
+
+
+
+
+
+/* espacio entre el navegador y el video */
+.esoacio1 {
+    padding: 36px;
+}
+/* espacio entre el navegador y el video en pantalla pequeña */
+@media (max-width: 768px) {
+    .esoacio1 {
+        padding: 0px;
     }
-/* la base  de la pagina*/
+}
+/* espacio entre el navegador y el video en pantalla mediana */
+    @media only screen and (min-width: 768px) and (max-width: 1018px) {
+        .esoacio1 {
+            padding: 0px;
+        }
+    }
+/* espacio entre el navegador y el video */
 
 
 
-/* nostros apartado */
 
-.imagen_imagen1 {
+
+/* nostros apartado estilo 1*/
+/*.imagen_imagen1 {
     max-width: 25%;
     height: auto;
 }
@@ -74,22 +77,21 @@ footer {
 .imagen_accessJob_logo {
     max-width: 15%;
     height: auto;
-    padding-top: 80px; /* Espacio adicional arriba */
-
-}
+    padding-top: 80px;*/ /* Espacio adicional arriba */
+/*}
 
 @media (max-width: 768px) {
     .imagen_accessJob_logo {
         max-width: 100%;
         height: auto;
-        padding-top: 0px; /* Espacio adicional arriba */
-    }
+        padding-top: 0px;*/ /* Espacio adicional arriba */
+    /*}
 }
 
 
 .textoper {
-    padding-top: 100px; /* Espacio adicional arriba */
-    color: #83d0f6;
+    padding-top: 100px;*/ /* Espacio adicional arriba */
+    /*color: #83d0f6;
     font-size: 25px;
 }
 
@@ -99,17 +101,14 @@ footer {
         color: #83d0f6;
         font-size: 15px;
     }
-}
-
-/* nostros apartado */
-
+}*/
+/* nostros apartado estilo 1*/
 
 
 
 
 
 /* nostros apartado2 */
-
 .imagen_imagen2 {
     max-width: 60%;
     height: auto;
@@ -122,7 +121,6 @@ footer {
         height: auto;
     }
 }
-
 
 .imagen_accessJob_logo2 {
     max-width: 38%;
@@ -144,16 +142,12 @@ footer {
     }
 }
 
-
-
 .textoper2 {
     padding-top: 20px;
     text-align: justify;
     color: #83d0f6;
     font-size: 24px;
 }
-
-
 
 @media (max-width: 767px) {
     .textoper2 {
@@ -179,16 +173,6 @@ footer {
         font-size: 18px;
     }
 }
-
-
-
-
-
-
-    
-
-
-
 /* nostros apartado2 */
 
 
@@ -198,7 +182,6 @@ footer {
 
 /*navegaccion*/
 /* centrado de la imagen  */
-
 @media only screen and (min-width: 1020px) and (max-width: 1271px) {
     .navbar-header .row {
         text-align: center; /* Alinea horizontalmente los elementos dentro de la fila */
@@ -223,9 +206,6 @@ footer {
 
    
 }
-
-
-
 
 .logo_accessJob_imagoc {
     height: 90px;
@@ -266,8 +246,6 @@ footer {
         height: 50vh;
     }
 }
-
-
 
 .browser-layout {
     display: flex;
@@ -364,8 +342,11 @@ img {
 
 
 
-/*Planes y Servicios*/
 
+
+
+
+/*Planes y Servicios*/
 .fondoservi {
     background-image: url('Imagenes/fondoservi.jpg');
     background-size: cover;
@@ -420,10 +401,16 @@ img {
         padding-left: 10px; /* Espacio adicional a la izquierda */
     }
 }
-
 /*Planes y Servicios*/
 
 
+
+
+
+
+
+
+/*CONTACTO*/
 .contenedor-derecho {
     color: white;
     background-image: url('Imagenes/fondocomentario.png');
@@ -433,19 +420,13 @@ img {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
 }
 
-
-
 /* el color del fondo de comentarios*/
 .fondoc_contacto {
     background-color: #ffffff;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8);
-
-     
-
 }
 
 .contacto-content {
- 
     display: flex;
     flex-wrap: wrap; /* Permite que los contenedores se envuelvan en pantallas pequeñas */
     justify-content: space-between;
@@ -454,7 +435,6 @@ img {
 
 
 .contenedor-derecho {
-   
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -468,11 +448,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centro horizontalmente */
-    margin-bottom: 20px; /* Espaciado entre contenedores en pantallas pequeñas */
+    margin-bottom: 25px; /* Espaciado entre contenedores en pantallas pequeñas */
 }
-
-
-
 
 .formulario {
     max-width: 100%;
@@ -481,12 +458,9 @@ img {
     border-radius: 0px; /* Puntas redondeadas */
     padding: 20px;
     text-align: center;
-
-   
 }
 
     .formulario label {
-        
         display: block;
         margin-bottom: 5px;
         color: black; /* Cambia el color de las letras a negro */
@@ -505,7 +479,7 @@ img {
         color: #010609;
     }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 392px) {
     .formulario input,
     .formulario textarea {
         width: 100%;
@@ -520,10 +494,6 @@ img {
     }
 }
 
-
-
-
-
     .formulario button {
         background-color: #7ecdf4; /* Fondo negro */
         color: white; /* Texto blanco */
@@ -535,7 +505,6 @@ img {
 
         .formulario button:hover {
             background-color: #333; /* Cambia el color al hacer hover */
-
         }
 
 
@@ -604,10 +573,11 @@ img {
 
 
 /* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
+
+@media screen and (max-width: 392px) {
     .redes-y-ubicacion {
         background-image: url('Imagenes/fondocomentario.png');
-            border-radius: 40px;
+        border-radius: 40px;
         width: 90%; /* Modificado para que se adapte al ancho de la pantalla */
         margin: 0 auto; /* Centra el contenedor horizontalmente */
         text-align: center;
@@ -678,7 +648,7 @@ img {
     padding: 20px;
     color: black;
 }
-
+/*CONTACTO*/
 
 
 
@@ -688,68 +658,63 @@ img {
 
 
 /* Estilos para la sección de Planes y Servicios */
-
 /* Estilo general para la sección de Planes y Servicios */
-.planes {
-    padding: 0; /* Elimina el relleno interior */
-    text-align: center; /* Alinea el contenido al centro */
-    margin-top: -10px; /* Mueve la sección hacia arriba */
-}
+/*.planes {
+    padding: 0;*/ /* Elimina el relleno interior */
+    /*text-align: center;*/ /* Alinea el contenido al centro */
+    /*margin-top: -10px;*/ /* Mueve la sección hacia arriba */
+/*}
 .contornoser {
-    padding-top: 10px; /* Espacio adicional arriba */
-    padding-right: 10px; /* Espacio adicional a la derecha */
-    padding-bottom: 10px; /* Espacio adicional hacia abajo */
-    padding-left: 10px; /* Espacio adicional a la izquierda */
-}
+    padding-top: 10px;*/ /* Espacio adicional arriba */
+    /*padding-right: 10px;*/ /* Espacio adicional a la derecha */
+    /*padding-bottom: 10px;*/ /* Espacio adicional hacia abajo */
+    /*padding-left: 10px;*/ /* Espacio adicional a la izquierda */
+/*}*/
 /* Estilo para el texto dentro de la sección */
-.texto {
-    background-image: linear-gradient(to right, #7ccff0, #76bae9, #6fa7d8, #6390c9, #5a74b8, #4c55a2); /* Gradiente de fondo */
-    font-family: Arial, sans-serif; /* Familia de fuente */
-    color: #FFFFFF; /* Color del texto */
-    text-align: center; /* Alineación del texto */
-    margin-top: -20px; /* Mueve el texto hacia arriba */
+/*.texto {
+    background-image: linear-gradient(to right, #7ccff0, #76bae9, #6fa7d8, #6390c9, #5a74b8, #4c55a2);*/ /* Gradiente de fondo */
+    /*font-family: Arial, sans-serif;*/ /* Familia de fuente */
+    /*color: #FFFFFF;*/ /* Color del texto */
+    /*text-align: center;*/ /* Alineación del texto */
+    /*margin-top: -20px;*/ /* Mueve el texto hacia arriba */
     
-}
-
-
+/*}*/
 
 /* Estilo para los cuadros de colores */
-
-
 /* Estilos específicos para cada color de cuadro */
-.contenedorservi {
-    border-radius: 50px 0 0 0; /* Redondea solo la esquina inferior derecha */
-    padding-top: 20px; /* Espacio adicional arriba */
-    padding-right: 0px; /* Espacio adicional a la derecha */
-    padding-bottom: 20px; /* Espacio adicional hacia abajo */
-    padding-left: 0px; /* Espacio adicional a la izquierda */
-    color: black;
-    width: 100%; /* Ahora el ancho del cuadro se ajustará automáticamente */
-    margin-bottom: 20px; /* Espacio entre cuadros */
-    transition: margin-right 0.5s; /* Transición suave del margen derecho */
-    font-size: 20px;
+/*.contenedorservi {
+    border-radius: 50px 0 0 0;*/ /* Redondea solo la esquina inferior derecha */
+    /*padding-top: 20px;*/ /* Espacio adicional arriba */
+    /*padding-right: 0px;*/ /* Espacio adicional a la derecha */
+    /*padding-bottom: 20px;*/ /* Espacio adicional hacia abajo */
+    /*padding-left: 0px;*/ /* Espacio adicional a la izquierda */
+    /*color: black;
+    width: 100%;*/ /* Ahora el ancho del cuadro se ajustará automáticamente */
+    /*margin-bottom: 20px;*/ /* Espacio entre cuadros */
+    /*transition: margin-right 0.5s;*/ /* Transición suave del margen derecho */
+    /*font-size: 20px;
 }
 
 .rojo {
-    background-color: #aaceec; /* Color de fondo rojo */
-}
+    background-color: #aaceec;*/ /* Color de fondo rojo */
+/*}
 
 .verde {
-    background-color: #9cb4dc; /* Color verde */
+    background-color: #9cb4dc;*/ /* Color verde */
    
-}
+/*}
 
 .azul {
-    background-color: #959dcb; /* Color azul */ 
+    background-color: #959dcb;*/ /* Color azul */ 
    
-}
+/*}
 
 .modulo {
     color: #048cb2;
     font-size: 25px;
-    padding-top: 25px; /* Espacio adicional arriba */
-    padding-bottom: 25px; /* Espacio adicional hacia abajo */
-}
+    padding-top: 25px;*/ /* Espacio adicional arriba */
+    /*padding-bottom: 25px;*/ /* Espacio adicional hacia abajo */
+/*}
 
 
 .botoncon {
@@ -760,86 +725,56 @@ img {
 
 .botonser {
     justify-content: center;
-    background-color: #7cccf4; /* Color de fondo */
-    border-radius: 10px; /* Bordes redondeados */
-    width: 100px; /* Ancho del botón */
-    height: 35px; /* Altura del botón */
+    background-color: #7cccf4;*/ /* Color de fondo */
+    /*border-radius: 10px;*/ /* Bordes redondeados */
+    /*width: 100px;*/ /* Ancho del botón */
+    /*height: 35px;*/ /* Altura del botón */
 
-    color: black;
+    /*color: black;
 }
 
 .gratis {
-    text-align: center; /* Alineación del texto al centro */
-    padding: 5px; /* Ajuste del relleno */
-    outline: 1px solid #0e8eb5; /* Contorno sólido */
-    display: inline-block; /* Mostrar como bloque en línea */
-    width: 250px; /* Ancho del elemento */
-    border-radius: 10px; /* Bordes redondeados */
-    font-size: 30px;
+    text-align: center;*/ /* Alineación del texto al centro */
+    /*padding: 5px;*/ /* Ajuste del relleno */
+    /*outline: 1px solid #0e8eb5;*/ /* Contorno sólido */
+    /*display: inline-block;*/ /* Mostrar como bloque en línea */
+    /*width: 250px;*/ /* Ancho del elemento */
+    /*border-radius: 10px;*/ /* Bordes redondeados */
+    /*font-size: 30px;
     
 }
 
 @media screen and (max-width: 767px) {
     .gratis {
-        text-align: center; /* Alineación del texto al centro */
-        padding: 5px; /* Ajuste del relleno */
-        outline: 1px solid #0e8eb5; /* Contorno sólido */
-        display: inline-block; /* Mostrar como bloque en línea */
-        width: 150px; /* Ancho del elemento */
-        border-radius: 10px; /* Bordes redondeados */
-        font-size: 20px;
+        text-align: center;*/ /* Alineación del texto al centro */
+        /*padding: 5px;*/ /* Ajuste del relleno */
+        /*outline: 1px solid #0e8eb5;*/ /* Contorno sólido */
+        /*display: inline-block;*/ /* Mostrar como bloque en línea */
+        /*width: 150px;*/ /* Ancho del elemento */
+        /*border-radius: 10px;*/ /* Bordes redondeados */
+        /*font-size: 20px;
     }
     .contenedorservi {
-        border-radius: 50px 0 0 0; /* Redondea solo la esquina inferior derecha */
-        padding-top: 20px; /* Espacio adicional arriba */
-        padding-right: 0px; /* Espacio adicional a la derecha */
-        padding-bottom: 20px; /* Espacio adicional hacia abajo */
-        padding-left: 0px; /* Espacio adicional a la izquierda */
-        color: black;
-        width: 100%; /* Ahora el ancho del cuadro se ajustará automáticamente */
-        margin-bottom: 20px; /* Espacio entre cuadros */
-        transition: margin-right 0.5s; /* Transición suave del margen derecho */
-        font-size: 15px;
+        border-radius: 50px 0 0 0;*/ /* Redondea solo la esquina inferior derecha */
+        /*padding-top: 20px;*/ /* Espacio adicional arriba */
+        /*padding-right: 0px;*/ /* Espacio adicional a la derecha */
+        /*padding-bottom: 20px;*/ /* Espacio adicional hacia abajo */
+        /*padding-left: 0px;*/ /* Espacio adicional a la izquierda */
+        /*color: black;
+        width: 100%;*/ /* Ahora el ancho del cuadro se ajustará automáticamente */
+        /*margin-bottom: 20px;*/ /* Espacio entre cuadros */
+        /*transition: margin-right 0.5s;*/ /* Transición suave del margen derecho */
+        /*font-size: 15px;
     }
 
-}
-
+}*/
 /* Estilos para la sección de Planes y Servicios */
 
 
-.privacidad {
-    width: 100%;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    color: #fff;
-    margin-right: 5px;
-    height: 60px;
-    color: ivory;
-}
 
 
-/* Estilos para el contenedor del loader */
-#loader-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
-/* Estilos para el loader */
-.loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid #3498db;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-}
-
-/* Animación */
+/* Animación nose de que */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -855,28 +790,34 @@ img {
     display: none;
 }
 
-.titulo7{
+.titulo7 {
     font-weight: bold;
+
+  
+
 }
 
 .fondo_T1{
     font-weight: bold;
 }
+/* Animación nose de que */
+
+
+
+
 
 
 
 
 /* Estilos de la mesa de ayuda GUIAS RAPIDAS*/
-
 .GUIASRAPIDAS {
     text-align: center;
   /*  background-color: #ffffff;*/
 }
 
-
 .imppdf {
-    width: 40%; /* Ancho del botón */
-    height: 40%; /* Altura del botón */
+    width: 20%; /* Ancho del botón */
+    height: 20%; /* Altura del botón */
     pointer-events: none;
     user-select: none;
     -webkit-user-select: none;
@@ -894,46 +835,12 @@ img {
 
 } 
 
-/* Estilos de la mesa de ayuda GUIAS RAPIDAS*/
 
-
-/* Estilos de whatsapp*/
-.whatsapp-float {
-    position: fixed;
-    width: 70px;
-    height: 70px;
-    bottom: 40px;
-    right: 40px;
-    border-radius: 60px;
-    text-align: center;
-    font-size: 24px;
-
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-    .whatsapp-float i {
-        margin-top: 2px;
-    }
-/* Estilos de whatsappS*/
-
-
-
-
-
-
-
+/* Estilos de los videos */
 .TitleMesadeayuda {
     width: auto;
     color: #000000;
-
-
     font-family: Inter;
-   
-
     opacity: 1;
     text-align: center;
 }
@@ -948,7 +855,6 @@ img {
     padding: 20px;
     padding-left: 50px;
 }
-
 
 
 .Card1,
@@ -1009,3 +915,78 @@ img {
         flex-basis: 110%;
     }
 }
+/* Estilos de los videos */
+/* Estilos de la mesa de ayuda GUIAS RAPIDAS*/
+
+
+
+
+
+
+
+
+/* Estilos de whatsapp*/
+.whatsapp-float {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 60px;
+    text-align: center;
+    font-size: 24px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+    .whatsapp-float i {
+        margin-top: 2px;
+    }
+/* Estilos de whatsappS*/
+
+
+
+
+
+
+
+
+
+/* la base de la pagina*/
+footer {
+    position: relative;
+    /* Establece la altura del footer en 3 píxeles */
+    height: 3px;
+    /* Establece el ancho del footer al 100% del ancho disponible */
+    width: 100%;
+    /* Centra el contenido dentro del footer horizontalmente */
+    text-align: center;
+    /* Establece un relleno de 10 píxeles arriba y abajo y 0 a la izquierda y a la derecha */
+    padding: 0px 0;
+}
+    footer .imagec {
+        /* color del contenedor de la imagen y evuitar la interaccion con la imagen */
+        background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
+        pointer-events: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+/* terminos legales */
+.privacidad {
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    color: #fff;
+    margin-right: 5px;
+    height: 60px;
+    color: ivory;
+}
+/* la base  de la pagina*/

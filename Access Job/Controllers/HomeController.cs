@@ -48,7 +48,7 @@ namespace Access_Job.Controllers
             // Enviar correo electrónico
             MailMessage mail = new MailMessage();
             mail.From = new MailAddress("alfredodanielramos123456@gmail.com"); // Coloco la dirección de correo electrónico quien lo envia
-            mail.To.Add("rene230802@gmail.com"); // Coloco el corrego de quien lo resibe 
+            mail.To.Add("infoacccesjobsofhubmx@gmail.com"); // Coloco el corrego de quien lo resibe 
             mail.Subject = "Nuevo mensaje desde el formulario"; // en mensaje 
             mail.Body = $"Nombre: {nombre}\nCorreo: {correo}\nTeléfono: {telefono}\nMensaje: {mensaje}"; // los datos que se mostraran
 
@@ -63,30 +63,32 @@ namespace Access_Job.Controllers
             return RedirectToAction("Index", new RouteValueDictionary { { "scrollTo", "contacto" } });
         }
 
-        // Método para descargar el documento 1
-        public ActionResult DescargarDocumento1()
+
+
+
+        // Método para abrir el documento 1 en una nueva pestaña del navegador
+        public ActionResult ManualdeUsuario()
         {
-            string rutaDocumento1 = Server.MapPath("~/Content/Documentos/Documento1.pdf");  // Ruta absoluta del Documento 1
-            return DescargarArchivo(rutaDocumento1);
-
-
+            string rutaDocumento1 = Server.MapPath("~/Content/Documentos/Manual de Usuario App.pdf");  // Ruta absoluta del Documento 1
+            return MostrarArchivoEnNuevaPestana(rutaDocumento1);
         }
 
-        // Método para descargar el documento 2
-        public ActionResult DescargarDocumento2()
-        {
-            string rutaDocumento2 = Server.MapPath("~/Content/Documentos/Documento2.pdf"); // Ruta absoluta del Documento 2
-            return DescargarArchivo(rutaDocumento2);
-        }
-
-        // Método para descargar un archivo dado una ruta
-        private ActionResult DescargarArchivo(string rutaArchivo)
+        // Método para mostrar un archivo en una nueva pestaña del navegador dado una ruta
+        private ActionResult MostrarArchivoEnNuevaPestana(string rutaArchivo)
         {
             if (System.IO.File.Exists(rutaArchivo))
             {
                 byte[] fileBytes = System.IO.File.ReadAllBytes(rutaArchivo);
                 string fileName = Path.GetFileName(rutaArchivo);
-                return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, fileName);
+
+                // Establecer el tipo de contenido y el encabezado Content-Disposition
+                Response.AddHeader("Content-Disposition", "inline; filename=" + fileName);
+                Response.AddHeader("Content-Type", "application/pdf");
+
+                // Agregar la etiqueta link para el icono de la pestaña
+                Response.Write("<link rel='icon' type='image/png' href='~/Content/Imagenes/accessJob_logo.png'>");
+
+                return File(fileBytes, "application/pdf");
             }
             else
             {
@@ -94,6 +96,9 @@ namespace Access_Job.Controllers
                 return HttpNotFound();
             }
         }
+
+
+
 
 
 
