@@ -9,9 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loader</title>
     <link rel="stylesheet" href="styles.css">
-
-
-
     <!-- JavaScript para mostrar el contenido después de cargar -->
     <script>
         window.addEventListener('load', function () {
@@ -274,12 +271,20 @@
                     <div class="container">
                         <div class="row ">
                             <div class="col-sm-12">
-                                <div class="card GUIASRAPIDAS">
+                               @* <div class="card GUIASRAPIDAS">
                                     <div class="card-body ">
                                         <h4 class="card-title textog">Guia rapida del manual de usuario App de ACCESS JOB pdf v2.0</h4>
                                         <a href="@Url.Action("ManualdeUsuario", "Home")" class="botonser" target="_blank">
                                             <img class="imppdf" src="~/Content/Imagenes/pdfdescarga.png" alt="Abrir PDF en nueva pestaña" />
                                         </a>
+                                    </div>
+
+                                </div>*@
+                                <div class="card GUIASRAPIDAS">
+                                    <div class="card-body ">
+                                        <h4 class="card-title textog">Guia rapida del manual de usuario App de ACCESS JOB pdf v2.0</h4>
+                                        <img class="imppdf" src="~/Content/Imagenes/pdfdescarga.png" alt="Abrir PDF en nueva pestaña" />
+                                        <a href="@Url.Action("ManualdeUsuario", "Home")" class="btn btn-primary botonser" target="_blank">Descargar</a>
                                     </div>
                                 </div>
 
