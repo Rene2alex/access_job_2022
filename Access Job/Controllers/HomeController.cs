@@ -8,11 +8,6 @@ using System.Web;
 using System.Net;
 using System.Net.Mail;
 using System.IO;
-
-
-
-
-
 using MySql.Data.MySqlClient;
 
 namespace Access_Job.Controllers
@@ -22,8 +17,6 @@ namespace Access_Job.Controllers
         
         public ActionResult Index()
         {
-
-          
             return View();
         }
 
@@ -47,7 +40,7 @@ namespace Access_Job.Controllers
 
             // Enviar correo electrónico
             MailMessage mail = new MailMessage();
-            mail.From = new MailAddress("alfredodanielramos123456@gmail.com"); // Coloco la dirección de correo electrónico quien lo envia
+            mail.From = new MailAddress("infoacccesjobsofhubmx@gmail.com"); // Coloco la dirección de correo electrónico quien lo envia
             mail.To.Add("infoacccesjobsofhubmx@gmail.com"); // Coloco el corrego de quien lo resibe 
             mail.Subject = "Nuevo mensaje desde el formulario"; // en mensaje 
             mail.Body = $"Nombre: {nombre}\nCorreo: {correo}\nTeléfono: {telefono}\nMensaje: {mensaje}"; // los datos que se mostraran
@@ -55,15 +48,13 @@ namespace Access_Job.Controllers
             // configuraccion del servidor 
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
             smtp.Port = 587;
-            smtp.Credentials = new NetworkCredential("alfredodanielramos123456@gmail.com", "cxrqgqhylkwprumv"); // Coloca tus credenciales
+            smtp.Credentials = new NetworkCredential("infoacccesjobsofhubmx@gmail.com", "lrknfabqqtufjmms"); // Coloca tus credenciales
             smtp.EnableSsl = true;
             smtp.Send(mail);
 
             // Redirigir al Index con un ancla para el apartado "CONTACTO"
             return RedirectToAction("Index", new RouteValueDictionary { { "scrollTo", "contacto" } });
         }
-
-
 
 
         // Método para abrir el documento 1 en una nueva pestaña del navegador
@@ -97,26 +88,18 @@ namespace Access_Job.Controllers
             }
         }
 
-
-
-
-
-
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
-
             return View();
         }
 
-      
         }
     }
 
