@@ -65,28 +65,39 @@ namespace Access_Job.Controllers
         }
 
         // Método para mostrar un archivo en una nueva pestaña del navegador dado una ruta
-        private ActionResult MostrarArchivoEnNuevaPestana(string rutaArchivo)
-        {
-            if (System.IO.File.Exists(rutaArchivo))
-            {
-                byte[] fileBytes = System.IO.File.ReadAllBytes(rutaArchivo);
-                string fileName = Path.GetFileName(rutaArchivo);
+      private ActionResult MostrarArchivoEnNuevaPestana(string rutaArchivo)
+{
+    // Verificar si el archivo existe en la ruta especificada
+    if (System.IO.File.Exists(rutaArchivo))
+    {
+        // Leer los bytes del archivo
+        byte[] fileBytes = System.IO.File.ReadAllBytes(rutaArchivo);
+        // Obtener el nombre del archivo
+        string fileName = Path.GetFileName(rutaArchivo);
 
-                // Establecer el tipo de contenido y el encabezado Content-Disposition
-                Response.AddHeader("Content-Disposition", "inline; filename=" + fileName);
-                Response.AddHeader("Content-Type", "application/pdf");
+        // Establecer el tipo de contenido y el encabezado Content-Disposition para el archivo
+        Response.AddHeader("Content-Disposition", "inline; filename=" + fileName);
+        Response.AddHeader("Content-Type", "application/pdf");
 
-                // Agregar la etiqueta link para el icono de la pestaña
-                Response.Write("<link rel='icon' type='image/png' href='~/Content/Imagenes/accessJob_logo.png'>");
+        // Agregar la etiqueta link para el icono de la pestaña del navegador
+        // La ruta a la imagen debe ser una URL válida accesible desde el navegador
+        // Aquí, "~/Content/Imagenes/accessJob_logo.png" es una ruta relativa al proyecto ASP.NET MVC
+        // Pero para que el navegador pueda acceder a ella, necesitas convertirla a una URL absoluta
+        // Si tienes una carpeta de imágenes accesible en tu proyecto, puedes usar una ruta absoluta o relativa según tu estructura de archivos
+        // En este caso, vamos a suponer que la carpeta de imágenes está en la raíz del sitio web
+        string iconURL = Url.Content("~/Content/Imagenes/accessJob_logo.png");
+        Response.Write($"<link rel='icon' type='image/png' href='{iconURL}'>");
 
-                return File(fileBytes, "application/pdf");
-            }
-            else
-            {
-                // Manejar el caso donde el archivo no existe
-                return HttpNotFound();
-            }
-        }
+        // Devolver el archivo como resultado de la acción
+        return File(fileBytes, "application/pdf");
+    }
+    else
+    {
+        // Manejar el caso donde el archivo no existe
+        return HttpNotFound();
+    }
+}
+
 
         public ActionResult About()
         {
