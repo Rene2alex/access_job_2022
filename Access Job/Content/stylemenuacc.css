@@ -1,5 +1,5 @@
 ﻿#menu {
-    background: #221586;
+    background: #74bcec;
     height: 100%;
     left: 0;
     opacity: 0;
@@ -144,7 +144,7 @@
         }
 
 .toggle-menu {
-    background-color: #1b07b1;
+    background: linear-gradient(to right,#7dcbf3, #6592cc, #4c55a1 );
     border: #1b07b1;
     cursor: pointer;
     display: inline-block;
